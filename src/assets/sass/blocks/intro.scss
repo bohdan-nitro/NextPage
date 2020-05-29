@@ -1,30 +1,211 @@
 .intro {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
 
-    overflow: hidden;
-    z-index: 1;
-    .intro__radial {
+    .background__wrapper {
+        position: relative;
+        width: inherit;
+        height: inherit;
+
+        .cover, .img__layers {
+            width: inherit;
+            height: inherit;
+        }
+
+        .cover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+            z-index: 1;
+        }
+
+        .img__layers {
+            position: relative;
+            z-index: 2;
+
+            > div {
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .focus_ {
+
+                &_purple {
+                    left: 735px;
+                    top: 114px;
+                    width: 120px;
+                    height: 125px;
+                    background-image: url(../../../assets/img/main-focus-purple.png);
+                }
+
+                &_headphone  {
+                    left: 200px;
+                    top: 100px;
+                    width: 200px;
+                    height: 240px;
+                    background-image: url(../../../assets/img/main-headphone-purple.png);
+                }
+
+                &_circle-red {
+                    width: 44px;
+                    height: 44px;
+                    left: 160px;
+                    top: 195px;
+                    background-image: url(../../../assets/img/main-circle.png);
+                }
+
+                &_camera {
+                    width: 325px;
+                    height: 290px;
+                    left: 50px;
+                    bottom: 75px;
+                    background-image: url(../../../assets/img/main-camera.png);
+                }
+
+                &_note {
+                    width: 140px;
+                    height: 120px;
+                    left: 325px;
+                    bottom: 50px;
+                    background-image: url(../../../assets/img/main-note.png);
+                }
+
+                &_heart {
+                    width: 100px;
+                    height: 100px;
+                    right: 465px;
+                    bottom: 120px;
+                    background-image: url(../../../assets/img/main-heart-purple.png);
+                }
+
+                &_action {
+                    right: 135px;
+                    bottom: 150px;
+                    width: 270px;
+                    height: 295px;
+                    background-image: url(../../../assets/img/main-action.png);
+                }
+
+                &_donat-red {
+                    right: 110px;
+                    bottom: 90px;
+                    width: 190px;
+                    height: 130px;
+                    background-image: url(../../../assets/img/main-focus.png);
+                }
+
+                &_dot-red {
+                    right: 95px;
+                    top: 325px;
+                    width: 60px;
+                    height: 60px;
+                    background-image: url(../../../assets/img/red-dot.png);
+                }
+
+                &_youtube {
+                    right: 205px;
+                    top: 25px;
+                    width: 300px;
+                    height: 245px;
+                    background-image: url(../../../assets/img/main-youtube.png);
+                }
+
+            }
+
+        }
+
+    }
+
+    .content__wrapper {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        max-width: 1174px;
-        max-height: 1055px;
-        left: 20%;
+        width: inherit;
+        height: inherit;
+        left: 0;
         top: 0;
-        background: radial-gradient(55.53% 33.64% at 50% 50%, rgba(255, 125, 150, 0.287806) 0%, rgba(245, 64, 137, 4e-05) 100%);
-        mix-blend-mode: normal;
-        opacity: 0.75;
-        overflow: hidden;
-        z-index: 2;
+        z-index: 1;
+
+        .container {
+            position: relative;
+            max-width: 1100px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+
+            .text__content {
+                text-align: center;
+                padding-top: 250px;
+
+                .text__author {
+                    font-family: $font-family-standart;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 13px;
+                    text-transform: uppercase;
+                    color: #F9A608;
+                }
+
+                .text__intro {
+                    font-family: $font-family-black;
+                    font-size: 170px;
+                    text-transform: uppercase;
+                    line-height: 175px;
+                    color: #FFEFF6;
+                }
+
+                .text__img-foryou {
+                    position: relative;
+                    top: -150px;
+                    left: 20px;
+                }
+
+            }
+
+            .viewers__wrapper {
+                position: absolute;
+                bottom: 55px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                .viewers__content {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    text-align: center;
+
+                    .viewers__title {
+                        font-family: $font-family-standart;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 15px;
+                        color: #643C5A;
+                        margin-bottom: 10px;
+                    }
+
+                    .viewers__count {
+                        font-family: $font-family-standart;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 33px;
+                        text-transform: uppercase;
+                        color: #F6F6F6;
+                        margin-bottom: 10px;
+                    }
+
+                    .viewers__name {
+                        font-family: $font-family-standart;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 15px;
+                        text-transform: uppercase;
+                        color: #F6F6F6;
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
-    .intro-image {
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        height: 100vh;
-    }
 }

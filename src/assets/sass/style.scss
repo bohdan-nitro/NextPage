@@ -4,22 +4,14 @@
 
 html {
     font-size: 15px;
-
-
 }
 
-
 body {
-
     position: relative;
     margin: 0;
-
-
     font-family: $font-family-standart;
     font-size: 1rem;
     line-height: 1.5;
-
-
 }
 
 *,
@@ -28,27 +20,15 @@ body {
     box-sizing: border-box;
 }
 
-
-//Bootstrap
-
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/mixins";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/transitions";
-@import "../../../node_modules/bootstrap/scss/grid";
-@import "../../../node_modules/bootstrap/scss/modal";
-
-
+a, ul, li {
+    text-decoration: none;
+}
 
 /* Blocks */
 @import "blocks/intro";
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/clients";
-
-
-
-
 
 /* Vendor libs */
 @import "vendor/slick";
