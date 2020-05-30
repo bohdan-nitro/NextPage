@@ -1,142 +1,93 @@
 .clients {
-    background:  #FFECEE;
+    background: #FFECEE;
     position: relative;
     display: flex;
     width: 100%;
     height: 100vh;
 
-    .header__pink {
+    .container  {
+        max-width: 1330px;
         width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: space-between;
-        z-index: 3;
-
-        .nav {
-            z-index: 3;
-
-            .nav__item {
-                .header__title {
-                    position: absolute;
-                    top: 0;
-                    left: 55px;
-
-                    font-size: 26px;
-                    color: $red;
-
-                    font-family: $font-family-black;
-                    font-weight: 500;
-                }
-
-                .nav__subtitle {
-                    .nav__link {
-                        position: absolute;
-                        top: 5%;
-                        right: 10%;
-                        font-weight: 700;
-                        font-size: 16px;
-                        text-transform: uppercase;
-                        font-family: $font-family-standart;
-                        color: $black;
-                        text-decoration: none;
-
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            top: -15px;
-                            left: 154px;
-
-                            border-radius: 50%;
-                            width: 54px;
-                            height: 54px;
-
-                            background: #fff;
-
-                        }
-                    }
-                }
-
-
-                .nav__circle {
-                    position: absolute;
-                    top: 60px;
-                    right: 115px;
-                    z-index: 3;
-
-                    &:nth-child(2) {
-                        top: 50px;
-                        right: 115px;
-                    }
-
-                    &:nth-child(3) {
-                        top: 60px;
-                        right: 104px;
-                    }
-
-                    &:nth-child(4) {
-                        top: 50px;
-                        right: 104px;
-
-                    }
-
-
-                }
-            }
-        }
+        margin: 0 auto;
     }
 
     .clients__info {
+        padding-top: 140px;
+        max-width: 325px;
         width: 100%;
-        height: 400px;
-        flex-wrap: wrap;
 
         .clients__count {
-            position: absolute;
-            max-width: 194px;
-            max-height: 80px;
-            left: 55px;
-            top: 134px;
-
             font-family: $font-family-black;
-
             font-size: 40px;
             line-height: 40px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
         }
+
         .clients__description {
-            position: absolute;
-            max-width: 323px;
-            max-height: 81px;
             left: 55px;
-            top: 236px;
-
             font-family: $font-family-standart;
-
             font-size: 16px;
             line-height: 26px;
-
             color: #643C5A;
-
-            mix-blend-mode: normal;
             opacity: 0.5;
+            margin-bottom: 20px;
         }
+
         .clients__link {
-            position: absolute;
-            width: 148px;
-            height: 26px;
-            left: 57px;
-            top: 308px;
-
             font-family: $font-family-black;
-
             font-size: 12px;
             line-height: 26px;
-
-
-            letter-spacing: 0.428571px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
-            text-decoration: none;
-
             color: $red;
+            padding: 10px 0;
         }
     }
+
+    .clients__grid {
+        width: 100%;
+        height: 100%;
+        padding: 70px 225px 0 130px;
+
+        .grid {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+
+            .scroll-wrapper {
+                display: flex;
+                flex-flow: column wrap;
+
+                .client__elem {
+                    position: relative;
+                    width: 33%;
+                    height: 200px;
+                    margin-bottom: 20px;
+                    padding-right: 10px;
+
+                    &:nth-child(2n) {
+                        height: 250px;
+                    }
+
+                    .client__image {
+                        background-color: #643C5A;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .client__name {
+                        position: absolute;
+                        z-index: 1;
+                        color: #fff;
+                    }
+                    
+                }
+                
+            }
+
+        }
+
+    }
+
 }

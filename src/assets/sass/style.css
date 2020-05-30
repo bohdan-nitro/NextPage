@@ -171,8 +171,10 @@ a, ul, li {
   left: 0;
   right: 0;
   z-index: 10;
-  width: 100%;
-  padding: 0 55px; }
+  width: 100%; }
+  .header .container {
+    max-width: 1330px;
+    margin: 0 auto; }
   .header .row {
     justify-content: space-between;
     align-items: center; }
@@ -223,6 +225,18 @@ a, ul, li {
           .header .nav .nav__menu .icon__wrapper .icon .dot:nth-child(4) {
             right: 0;
             bottom: 0; }
+  .header.white .nav .nav__contact {
+    color: #161415; }
+  .header.white .nav .nav__menu::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff; }
 
 section {
   position: relative;
@@ -240,93 +254,234 @@ section {
   display: flex;
   width: 100%;
   height: 100vh; }
-  .clients .header__pink {
+  .clients .container {
+    max-width: 1330px;
     width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 3; }
-    .clients .header__pink .nav {
-      z-index: 3; }
-      .clients .header__pink .nav .nav__item .header__title {
-        position: absolute;
-        top: 0;
-        left: 55px;
-        font-size: 26px;
-        color: #D2132A;
-        font-family: "Archivo Black", sans-serif;
-        font-weight: 500; }
-      .clients .header__pink .nav .nav__item .nav__subtitle .nav__link {
-        position: absolute;
-        top: 5%;
-        right: 10%;
-        font-weight: 700;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-family: "Archivo", sans-serif;
-        color: #161415;
-        text-decoration: none; }
-        .clients .header__pink .nav .nav__item .nav__subtitle .nav__link:after {
-          content: '';
-          position: absolute;
-          top: -15px;
-          left: 154px;
-          border-radius: 50%;
-          width: 54px;
-          height: 54px;
-          background: #fff; }
-      .clients .header__pink .nav .nav__item .nav__circle {
-        position: absolute;
-        top: 60px;
-        right: 115px;
-        z-index: 3; }
-        .clients .header__pink .nav .nav__item .nav__circle:nth-child(2) {
-          top: 50px;
-          right: 115px; }
-        .clients .header__pink .nav .nav__item .nav__circle:nth-child(3) {
-          top: 60px;
-          right: 104px; }
-        .clients .header__pink .nav .nav__item .nav__circle:nth-child(4) {
-          top: 50px;
-          right: 104px; }
+    margin: 0 auto; }
   .clients .clients__info {
-    width: 100%;
-    height: 400px;
-    flex-wrap: wrap; }
+    padding-top: 140px;
+    max-width: 325px;
+    width: 100%; }
     .clients .clients__info .clients__count {
-      position: absolute;
-      max-width: 194px;
-      max-height: 80px;
-      left: 55px;
-      top: 134px;
       font-family: "Archivo Black", sans-serif;
       font-size: 40px;
-      line-height: 40px; }
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 24px; }
     .clients .clients__info .clients__description {
-      position: absolute;
-      max-width: 323px;
-      max-height: 81px;
       left: 55px;
-      top: 236px;
       font-family: "Archivo", sans-serif;
       font-size: 16px;
       line-height: 26px;
       color: #643C5A;
-      mix-blend-mode: normal;
-      opacity: 0.5; }
+      opacity: 0.5;
+      margin-bottom: 20px; }
     .clients .clients__info .clients__link {
-      position: absolute;
-      width: 148px;
-      height: 26px;
-      left: 57px;
-      top: 308px;
       font-family: "Archivo Black", sans-serif;
       font-size: 12px;
       line-height: 26px;
-      letter-spacing: 0.428571px;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
-      text-decoration: none;
-      color: #D2132A; }
+      color: #D2132A;
+      padding: 10px 0; }
+  .clients .clients__grid {
+    width: 100%;
+    height: 100%;
+    padding: 70px 225px 0 130px; }
+    .clients .clients__grid .grid {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll; }
+      .clients .clients__grid .grid .scroll-wrapper {
+        display: flex;
+        flex-flow: column wrap; }
+        .clients .clients__grid .grid .scroll-wrapper .client__elem {
+          position: relative;
+          width: 33%;
+          height: 200px;
+          margin-bottom: 20px;
+          padding-right: 10px; }
+          .clients .clients__grid .grid .scroll-wrapper .client__elem:nth-child(2n) {
+            height: 250px; }
+          .clients .clients__grid .grid .scroll-wrapper .client__elem .client__image {
+            background-color: #643C5A;
+            width: 100%;
+            height: 100%; }
+          .clients .clients__grid .grid .scroll-wrapper .client__elem .client__name {
+            position: absolute;
+            z-index: 1;
+            color: #fff; }
+
+.config {
+  display: flex;
+  width: 100%; }
+  .config .background__wrapper {
+    position: relative;
+    width: inherit;
+    height: inherit; }
+    .config .background__wrapper .cover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+      z-index: 2;
+      width: 100%;
+      height: 100%; }
+  .config .container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+    .config .container .option-wrapper {
+      padding-top: 140px;
+      width: 100%;
+      height: 100%;
+      max-width: 650px;
+      max-height: 700px;
+      z-index: 3; }
+      .config .container .option-wrapper .option__title {
+        font-family: "Archivo Black", sans-serif;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #FFFFFF; }
+      .config .container .option-wrapper .option__image-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+        max-width: 750px;
+        max-height: 400px; }
+        .config .container .option-wrapper .option__image-wrapper .option__elem {
+          position: relative;
+          width: 33%;
+          height: 100%;
+          max-height: 180px;
+          max-width: 180px;
+          margin-right: 9px;
+          transition: all 0.2s linear; }
+          .config .container .option-wrapper .option__image-wrapper .option__elem:hover {
+            background-color: #D2132A;
+            border-radius: 12px; }
+          .config .container .option-wrapper .option__image-wrapper .option__elem .background {
+            background: rgba(100, 60, 90, 0.2);
+            border-radius: 12px;
+            width: 100%;
+            height: 100%;
+            max-height: 190px;
+            max-width: 192px; }
+          .config .container .option-wrapper .option__image-wrapper .option__elem .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -3%;
+            transition: all 0.3s linear; }
+            .config .container .option-wrapper .option__image-wrapper .option__elem .image image {
+              width: 100%;
+              object-fit: cover; }
+            .config .container .option-wrapper .option__image-wrapper .option__elem .image .img {
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0; }
+              .config .container .option-wrapper .option__image-wrapper .option__elem .image .img:hover {
+                opacity: 0; }
+            .config .container .option-wrapper .option__image-wrapper .option__elem .image .img-hover {
+              position: absolute;
+              top: 0;
+              left: -3%;
+              opacity: 0;
+              transition: all 0.3s linear; }
+    .config .container .right__side-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-height: 680px;
+      padding: 120px 0 0 70px;
+      z-index: 6; }
+      .config .container .right__side-wrapper .title__wrapper {
+        display: flex;
+        padding-top: 320px;
+        width: 100%;
+        height: 100%;
+        max-height: 130px;
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        z-index: 5; }
+        .config .container .right__side-wrapper .title__wrapper .option__description {
+          font-family: "Archivo", sans-serif;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 46px;
+          color: #fff; }
+      .config .container .right__side-wrapper .link__wrapper {
+        display: flex;
+        padding-top: 45px;
+        width: 100%;
+        height: 100%;
+        max-height: 40px;
+        justify-content: center; }
+        .config .container .right__side-wrapper .link__wrapper .option__link {
+          font-family: "Archivo Black", sans-serif;
+          font-size: 12px;
+          line-height: 6px;
+          width: 100%;
+          height: 100%;
+          max-width: 150px;
+          max-height: inherit;
+          padding: 15px 5px;
+          text-align: center;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: #D2132A;
+          cursor: pointer;
+          z-index: 5; }
+      .config .container .right__side-wrapper .img__wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        .config .container .right__side-wrapper .img__wrapper > div {
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center; }
+        .config .container .right__side-wrapper .img__wrapper .option__heart {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          right: 465px;
+          bottom: 120px;
+          background-image: url(../../../assets/img/main-heart-purple.png); }
+        .config .container .right__side-wrapper .img__wrapper .option__config-big {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          max-width: 470px;
+          max-height: 470px;
+          top: 96px;
+          left: 55px;
+          background-image: url("../../../assets/img/options/big/gear2.png");
+          z-index: -1; }
+        .config .container .right__side-wrapper .img__wrapper .option__circle-red {
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          left: 50px;
+          top: 100px;
+          background-image: url(../../../assets/img/main-circle.png); }
+        .config .container .right__side-wrapper .img__wrapper .option__circle-red-sm {
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          left: 510px;
+          top: 150px;
+          background-image: url(../../../assets/img/main-circle.png);
+          filter: blur(8px); }
 
 /* Vendor libs */
 /* Slider */

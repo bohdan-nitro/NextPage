@@ -5,7 +5,11 @@
     right: 0;
     z-index: 10;
     width: 100%;
-    padding: 0 55px;
+
+    .container {
+        max-width: 1330px;
+        margin: 0 auto;
+    }
 
     .row {
         justify-content: space-between;
@@ -83,6 +87,39 @@
 
                 }
 
+            }
+
+        }
+
+    }
+
+    &.black {
+
+    }
+
+    &.white {
+
+        .nav {
+
+            .nav__contact {
+                color: $black;
+            }
+
+            .nav__menu {
+                &::before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+
+                    top: 0;
+                    left: 0;
+
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background-color: #fff;
+
+                }
             }
 
         }
