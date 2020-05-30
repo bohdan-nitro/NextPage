@@ -12,6 +12,16 @@ body {
     font-family: $font-family-standart;
     font-size: 1rem;
     line-height: 1.5;
+    overflow-x: hidden;
+}
+
+section {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -30,6 +40,7 @@ a, ul, li {
 @import "blocks/main";
 @import "blocks/clients";
 @import "blocks/config";
+@import "blocks/team";
 
 /* Vendor libs */
-@import "vendor/slick";
+@import "vendor/swiper";

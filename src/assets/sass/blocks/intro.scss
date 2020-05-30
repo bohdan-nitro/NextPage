@@ -1,4 +1,12 @@
 .intro {
+    background-color: #170119;
+
+    > .container {
+        max-width: 1440px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
 
     .background__wrapper {
         position: relative;
@@ -15,12 +23,14 @@
             left: 0;
             top: 0;
             background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
-            z-index: 1;
         }
 
         .img__layers {
-            position: relative;
-            z-index: 2;
+            position: absolute;
+            max-height: 800px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
 
             > div {
                 position: absolute;
@@ -123,7 +133,7 @@
         height: inherit;
         left: 0;
         top: 0;
-        z-index: 1;
+        z-index: 2;
 
         .container {
             position: relative;
@@ -206,6 +216,97 @@
 
         }
 
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    .intro .content__wrapper .container .text__content {
+        padding-top: 32vh;
+    }
+    
+}
+
+@media screen and (max-width: 1270px) {
+
+    .intro {
+
+        .background__wrapper {
+            .img__layers {
+
+                .focus_ {
+
+                    &_purple {
+                        left: 50%;
+                    }
+
+                    &_headphone {
+                        left: 5%;
+                        top: 18%;
+                    }
+
+                    &_circle-red {
+                        left: 1%;
+                        top: 33%;
+                    }
+
+                    &_camera {
+                        bottom: 5%;
+                        left: 1%;
+                    }
+
+                    &_note {
+                        bottom: 5%;
+                        left: 25%;
+                    }
+
+                    &_heart {
+                        bottom: 20%;
+                        right: 30%;
+                    }
+
+                    &_action {
+                        right: 0%;
+                    }
+
+                    &_donat-red {
+                        bottom: 5%;
+                        right: 10%;
+                    }
+
+                    &_dot-red {
+                        right: 2%;
+                        top: 35%;
+                    }
+
+                    &_youtube {
+                        right: 10%;
+                        top: 7%;
+                    }
+
+                }
+
+            }
+        }
+
+        .content__wrapper {
+            .container {
+                .text__content {
+
+                    .text__intro {
+                        font-size: 150px;
+                        line-height: 160px;
+                    }
+
+                    .text__img-foryou {
+                        top: -130px;
+                        max-width: 620px;
+                    }
+
+                }
+            }
+        }
     }
 
 }

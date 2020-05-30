@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Default styles */
 html {
     font-size: 15px;
@@ -10,6 +9,16 @@ body {
     font-family: "Archivo", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+    overflow-x: hidden;
+}
+
+section {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -24,6 +33,17 @@ a, ul, li {
 }
 
 /* Blocks */
+.intro {
+    background-color: #170119;
+}
+
+.intro > .container {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 .intro .background__wrapper {
     position: relative;
     width: inherit;
@@ -41,12 +61,16 @@ a, ul, li {
     top: 0;
     background: -o-radial-gradient(50% 50%, 48.18% 24.84%, #2A0227 0%, #170119 100%);
     background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
-    z-index: 1;
 }
 
 .intro .background__wrapper .img__layers {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    max-height: 800px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .intro .background__wrapper .img__layers > div {
@@ -142,7 +166,7 @@ a, ul, li {
     height: inherit;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .intro .content__wrapper .container {
@@ -229,6 +253,72 @@ a, ul, li {
     color: #F6F6F6;
 }
 
+@media screen and (min-width: 1600px) {
+    .intro .content__wrapper .container .text__content {
+        padding-top: 32vh;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .intro .background__wrapper .img__layers .focus__purple {
+        left: 50%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__headphone {
+        left: 5%;
+        top: 18%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__circle-red {
+        left: 1%;
+        top: 33%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__camera {
+        bottom: 5%;
+        left: 1%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__note {
+        bottom: 5%;
+        left: 25%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__heart {
+        bottom: 20%;
+        right: 30%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__action {
+        right: 0%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__donat-red {
+        bottom: 5%;
+        right: 10%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__dot-red {
+        right: 2%;
+        top: 35%;
+    }
+
+    .intro .background__wrapper .img__layers .focus__youtube {
+        right: 10%;
+        top: 7%;
+    }
+
+    .intro .content__wrapper .container .text__content .text__intro {
+        font-size: 150px;
+        line-height: 160px;
+    }
+
+    .intro .content__wrapper .container .text__content .text__img-foryou {
+        top: -130px;
+        max-width: 620px;
+    }
+}
+
 .header {
     position: absolute;
     top: 33px;
@@ -239,7 +329,9 @@ a, ul, li {
 }
 
 .header .container {
-    max-width: 1330px;
+    padding: 0 55px;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -366,8 +458,9 @@ section {
     height: 100vh;
 }
 
-.clients .container {
-    max-width: 1330px;
+.clients > .container {
+    max-width: 1440px;
+    padding: 0 55px;
     width: 100%;
     margin: 0 auto;
 }
@@ -419,50 +512,56 @@ section {
 }
 
 .clients .clients__grid .grid .scroll-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 47px;
+    grid-auto-rows: 260px;
 }
 
 .clients .clients__grid .grid .scroll-wrapper .client__elem {
     position: relative;
-    width: 33%;
-    height: 200px;
-    margin-bottom: 20px;
-    padding-right: 10px;
-}
-
-.clients .clients__grid .grid .scroll-wrapper .client__elem:nth-child(2n) {
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 
 .clients .clients__grid .grid .scroll-wrapper .client__elem .client__image {
-    background-color: #643C5A;
+    width: 100%;
+    max-height: 260px;
+    border-radius: 5px;
+}
+
+.clients .clients__grid .grid .scroll-wrapper .client__elem .client__image img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
 }
 
 .clients .clients__grid .grid .scroll-wrapper .client__elem .client__name {
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-}
-
-.config {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    color: #383030;
+    margin-top: 12px;
 }
 
 .config .background__wrapper {
     position: relative;
     width: inherit;
     height: inherit;
+}
+
+.config .background__wrapper > .container {
+    position: relative;
+    max-width: 1440px;
+    padding: 0 55px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .config .background__wrapper .cover {
@@ -476,32 +575,24 @@ section {
     height: 100%;
 }
 
-.config .container {
-    position: relative;
-    max-width: 1200px;
+.config .option-wrapper {
+    padding-top: 196px;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-}
-
-.config .container .option-wrapper {
-    padding-top: 140px;
-    width: 100%;
-    height: 100%;
-    max-width: 650px;
-    max-height: 700px;
+    max-width: 560px;
     z-index: 3;
 }
 
-.config .container .option-wrapper .option__title {
+.config .option-wrapper .option__title {
     font-family: "Archivo Black", sans-serif;
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 48px;
 }
 
-.config .container .option-wrapper .option__image-wrapper {
+.config .option-wrapper .option__image-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -509,14 +600,12 @@ section {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    padding-top: 20px;
     width: 100%;
     height: 100%;
-    max-width: 750px;
-    max-height: 400px;
+    max-height: 375px;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem {
+.config .option-wrapper .option__image-wrapper .option__elem {
     position: relative;
     width: 33%;
     height: 100%;
@@ -528,12 +617,16 @@ section {
     transition: all 0.2s linear;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem:hover {
+.config .option-wrapper .option__image-wrapper .option__elem:nth-last-child(3n + 1) {
+    margin-right: 0;
+}
+
+.config .option-wrapper .option__image-wrapper .option__elem:hover {
     background-color: #D2132A;
     border-radius: 12px;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem .background {
+.config .option-wrapper .option__image-wrapper .option__elem .background {
     background: rgba(100, 60, 90, 0.2);
     border-radius: 12px;
     width: 100%;
@@ -542,7 +635,7 @@ section {
     max-width: 192px;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem .image {
+.config .option-wrapper .option__image-wrapper .option__elem .image {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -553,24 +646,24 @@ section {
     transition: all 0.3s linear;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem .image image {
+.config .option-wrapper .option__image-wrapper .option__elem .image image {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem .image .img {
+.config .option-wrapper .option__image-wrapper .option__elem .image .img {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem .image .img:hover {
+.config .option-wrapper .option__image-wrapper .option__elem .image .img:hover {
     opacity: 0;
 }
 
-.config .container .option-wrapper .option__image-wrapper .option__elem .image .img-hover {
+.config .option-wrapper .option__image-wrapper .option__elem .image .img-hover {
     position: absolute;
     top: 0;
     left: -3%;
@@ -580,7 +673,7 @@ section {
     transition: all 0.3s linear;
 }
 
-.config .container .right__side-wrapper {
+.config .right__side-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -589,7 +682,7 @@ section {
     z-index: 6;
 }
 
-.config .container .right__side-wrapper .title__wrapper {
+.config .right__side-wrapper .title__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -606,7 +699,7 @@ section {
     z-index: 5;
 }
 
-.config .container .right__side-wrapper .title__wrapper .option__description {
+.config .right__side-wrapper .title__wrapper .option__description {
     font-family: "Archivo", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -614,7 +707,7 @@ section {
     color: #fff;
 }
 
-.config .container .right__side-wrapper .link__wrapper {
+.config .right__side-wrapper .link__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -627,7 +720,7 @@ section {
     justify-content: center;
 }
 
-.config .container .right__side-wrapper .link__wrapper .option__link {
+.config .right__side-wrapper .link__wrapper .option__link {
     font-family: "Archivo Black", sans-serif;
     font-size: 12px;
     line-height: 6px;
@@ -644,20 +737,20 @@ section {
     z-index: 5;
 }
 
-.config .container .right__side-wrapper .img__wrapper {
+.config .right__side-wrapper .img__wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.config .container .right__side-wrapper .img__wrapper > div {
+.config .right__side-wrapper .img__wrapper > div {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.config .container .right__side-wrapper .img__wrapper .option__heart {
+.config .right__side-wrapper .img__wrapper .option__heart {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -666,7 +759,7 @@ section {
     background-image: url(../../../assets/img/main-heart-purple.png);
 }
 
-.config .container .right__side-wrapper .img__wrapper .option__config-big {
+.config .right__side-wrapper .img__wrapper .option__config-big {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -678,7 +771,7 @@ section {
     z-index: -1;
 }
 
-.config .container .right__side-wrapper .img__wrapper .option__circle-red {
+.config .right__side-wrapper .img__wrapper .option__circle-red {
     position: absolute;
     width: 44px;
     height: 44px;
@@ -687,286 +780,339 @@ section {
     background-image: url(../../../assets/img/main-circle.png);
 }
 
-.config .container .right__side-wrapper .img__wrapper .option__circle-red-sm {
+.config .right__side-wrapper .img__wrapper .option__circle-red-sm {
     position: absolute;
     width: 44px;
     height: 44px;
     left: 510px;
     top: 150px;
     background-image: url(../../../assets/img/main-circle.png);
-    -webkit-filter: blur(8px);
-    filter: blur(8px);
+}
+
+.team {
+    background: #FFECEE;
+    position: relative;
+}
+
+.team > .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+.team .title_wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team .title_wrapper .team__title {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.team .content__wrapper {
+    width: 100%;
+    height: 335px;
+}
+
+.team .content__wrapper .swiper-slide {
+    position: relative;
+    height: 100%;
+    width: 263px;
+}
+
+.team .content__wrapper .swiper-slide .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.team .content__wrapper .swiper-slide .image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+.team .content__wrapper .swiper-slide .text__wrapper {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.team .content__wrapper .swiper-slide .text__wrapper .name {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.team .content__wrapper .swiper-slide .text__wrapper .position {
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.team .team-bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+
+.team .contact-us__wrapper {
+    width: 100%;
+    height: 150px;
+}
+
+.team .contact-us__wrapper .link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #170119;
+    text-align: center;
+}
+
+.team .contact-us__wrapper .link span {
+    position: relative;
+    font-family: "Archivo", sans-serif;
+    font-size: 32px;
+    line-height: 150px;
+    color: #FFFFFF;
+}
+
+.team .contact-us__wrapper .link span::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url("../../../assets/img/contact-us-arrow.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.team .footer {
+    background-color: #170119;
+    width: 100%;
+    height: auto;
+}
+
+.team .footer .container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 55px;
+    height: 45px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.team .footer .text {
+    font-family: "Archivo", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.team .footer .link .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    background-image: url("../../../assets/img/NP.png");
+}
+
+.team .footer .link span {
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 14px;
+}
+
+@media screen and (min-width: 1600px) {
+    .team > .container {
+        padding-top: 14vh;
+    }
 }
 
 /* Vendor libs */
-/* Slider */
-.slick-slider {
-    position: relative;
-    display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.slick-list:focus {
-    outline: none;
-}
-
-.slick-list.dragging {
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-    position: relative;
-    left: 0;
-    top: 0;
-    display: block;
+.swiper-container {
     margin-left: auto;
     margin-right: auto;
-}
-
-.slick-track:before, .slick-track:after {
-    content: "";
-    display: table;
-}
-
-.slick-track:after {
-    clear: both;
-}
-
-.slick-loading .slick-track {
-    visibility: hidden;
-}
-
-.slick-slide {
-    float: left;
-    height: 100%;
-    min-height: 1px;
-    display: none;
-}
-
-[dir="rtl"] .slick-slide {
-    float: right;
-}
-
-.slick-slide img {
-    display: block;
-}
-
-.slick-slide.slick-loading img {
-    display: none;
-}
-
-.slick-slide.dragging img {
-    pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-    display: block;
-}
-
-.slick-loading .slick-slide {
-    visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-    display: none;
-}
-
-/* Slider */
-.slick-loading .slick-list {
-    background: #fff url("./ajax-loader.gif") center center no-repeat;
-}
-
-/* Icons */
-@font-face {
-    font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Arrows */
-.slick-prev,
-.slick-next {
-    position: absolute;
-    display: block;
-    height: 20px;
-    width: 20px;
-    line-height: 0px;
-    font-size: 0px;
-    cursor: pointer;
-    background: transparent;
-    color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    padding: 0;
-    border: none;
-    outline: none;
-}
-
-.slick-prev:hover, .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
-    outline: none;
-    background: transparent;
-    color: transparent;
-}
-
-.slick-prev:hover:before, .slick-prev:focus:before,
-    .slick-next:hover:before,
-    .slick-next:focus:before {
-    opacity: 1;
-}
-
-.slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before {
-    opacity: 0.25;
-}
-
-.slick-prev:before,
-  .slick-next:before {
-    font-family: "slick";
-    font-size: 20px;
-    line-height: 1;
-    color: white;
-    opacity: 0.75;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev {
-    left: -25px;
-}
-
-[dir="rtl"] .slick-prev {
-    left: auto;
-    right: -25px;
-}
-
-.slick-prev:before {
-    content: "←";
-}
-
-[dir="rtl"] .slick-prev:before {
-    content: "→";
-}
-
-.slick-next {
-    right: -25px;
-}
-
-[dir="rtl"] .slick-next {
-    left: -25px;
-    right: auto;
-}
-
-.slick-next:before {
-    content: "→";
-}
-
-[dir="rtl"] .slick-next:before {
-    content: "←";
-}
-
-/* Dots */
-.slick-dotted.slick-slider {
-    margin-bottom: 30px;
-}
-
-.slick-dots {
-    position: absolute;
-    bottom: -25px;
-    list-style: none;
-    display: block;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.slick-dots li {
     position: relative;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    margin: 0 5px;
+    overflow: hidden;
+    list-style: none;
     padding: 0;
-    cursor: pointer;
+  /* Fix of Webkit flickering */
+    z-index: 1;
 }
 
-.slick-dots li button {
-    border: 0;
-    background: transparent;
-    display: block;
-    height: 20px;
-    width: 20px;
-    outline: none;
-    line-height: 0px;
-    font-size: 0px;
-    color: transparent;
-    padding: 5px;
-    cursor: pointer;
+.swiper-container-no-flexbox .swiper-slide {
+    float: left;
 }
 
-.slick-dots li button:hover, .slick-dots li button:focus {
-    outline: none;
+.swiper-container-vertical > .swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
-.slick-dots li button:hover:before, .slick-dots li button:focus:before {
-    opacity: 1;
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
-.slick-dots li button:before {
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+}
+
+.swiper-container-multirow > .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.swiper-container-free-mode > .swiper-wrapper {
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+
+.swiper-slide-invisible-blank {
+    visibility: hidden;
+}
+
+/* Auto Height */
+.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+    height: auto;
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-transition-property: height, -webkit-transform;
+    transition-property: height, -webkit-transform;
+    -o-transition-property: transform, height;
+    transition-property: transform, height;
+    transition-property: transform, height, -webkit-transform;
+}
+
+/* 3D Effects */
+.swiper-container-3d {
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.swiper-container-3d .swiper-wrapper, .swiper-container-3d .swiper-slide, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top, .swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-cube-shadow {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top, .swiper-container-3d .swiper-slide-shadow-bottom {
     position: absolute;
-    top: 0;
     left: 0;
-    content: "•";
-    width: 20px;
-    height: 20px;
-    font-family: "slick";
-    font-size: 6px;
-    line-height: 20px;
-    text-align: center;
-    color: black;
-    opacity: 0.25;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
 }
 
-.slick-dots li.slick-active button:before {
-    color: black;
-    opacity: 0.75;
+.swiper-container-3d .swiper-slide-shadow-left {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-container-3d .swiper-slide-shadow-top {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-container-wp8-horizontal, .swiper-container-wp8-horizontal > .swiper-wrapper {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+.swiper-container-wp8-vertical, .swiper-container-wp8-vertical > .swiper-wrapper {
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
 }

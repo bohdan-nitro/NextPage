@@ -5,8 +5,9 @@
     width: 100%;
     height: 100vh;
 
-    .container  {
-        max-width: 1330px;
+    > .container  {
+        max-width: 1440px;
+        padding: 0 55px;
         width: 100%;
         margin: 0 auto;
     }
@@ -56,30 +57,38 @@
             overflow-y: scroll;
 
             .scroll-wrapper {
-                display: flex;
-                flex-flow: column wrap;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(3,1fr);
+                grid-column-gap: 30px;
+                grid-row-gap: 47px;
+                grid-auto-rows: 260px;
 
                 .client__elem {
                     position: relative;
-                    width: 33%;
-                    height: 200px;
-                    margin-bottom: 20px;
-                    padding-right: 10px;
-
-                    &:nth-child(2n) {
-                        height: 250px;
-                    }
+                    width: 100%;
+                    height: auto;
 
                     .client__image {
-                        background-color: #643C5A;
                         width: 100%;
-                        height: 100%;
+                        max-height: 260px;
+                        border-radius: 5px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+
                     }
 
                     .client__name {
-                        position: absolute;
-                        z-index: 1;
-                        color: #fff;
+                        font-family: $font-family-standart;
+                        font-size: 16px;
+                        line-height: 17px;
+                        color: #383030;
+                        margin-top: 12px;
                     }
                     
                 }
