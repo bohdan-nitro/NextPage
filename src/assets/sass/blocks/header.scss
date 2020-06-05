@@ -6,6 +6,7 @@
     z-index: 10;
     width: 100%;
 
+
     .container {
         padding: 0 55px;
         max-width: 1440px;
@@ -40,6 +41,14 @@
             text-transform: uppercase;
             color: #FFEFF6;
             margin-right: 20px;
+            padding: 10px 0;
+            opacity: 1;
+            transition: 0.3s linear;
+
+            &:hover {
+                opacity: 0;
+
+            }
         }
 
         .nav__menu {
@@ -126,6 +135,13 @@
 
         }
 
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .header > .row {
+        padding: 0 20px 0 20px;
     }
 
 }

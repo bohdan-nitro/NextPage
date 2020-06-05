@@ -1,0 +1,365 @@
+//intro Animation
+
+@keyframes circle {
+    0% {
+        transform: translate(0px, -15px)
+    }
+    25% {
+        transform: translate(10px, 0)
+    }
+    50% {
+        transform: translate(-20px, 5px)
+    }
+    75% {
+        transform: translate(10px, 0)
+    }
+    100% {
+        transform: translate(0px, -15px)
+    }
+}
+
+@keyframes heart {
+    0% {
+        transform: translate(0px, -15px)
+    }
+    50% {
+        transform: translate(-45px, 15px)
+    }
+    75% {
+        transform: translate(-65px, 0)
+    }
+    100% {
+        transform: translate(0px, -15px)
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translate(0px, 55px)
+    }
+    25% {
+        transform: translate(0px, 20px)
+    }
+    50% {
+        transform: translate(0px, -25px)
+    }
+    75% {
+        transform: translate(0px, 15px)
+    }
+    100% {
+        transform: translate(0px, 55px)
+    }
+}
+
+@keyframes youtube {
+    0% {
+        transform: translate(0px, -5px)
+    }
+    25% {
+        transform: translate(15px, 0)
+    }
+    50% {
+        transform: translate(-15px, 15px)
+    }
+    75% {
+        transform: translate(-25px, 0)
+    }
+    100% {
+        transform: translate(0px, -5px)
+    }
+}
+
+@keyframes note {
+    0% {
+        transform: translate(5px, -15px)
+    }
+    25% {
+        transform: translate(0px, 0)
+    }
+    50% {
+        transform: translate(-5px, 15px)
+    }
+    75% {
+        transform: translate(15px, 5px)
+    }
+    100% {
+        transform: translate(5px, -15px)
+    }
+}
+
+@keyframes action {
+
+    0% {
+        transform: translate(30px, 0px);
+    }
+    25% {
+        transform: translate(5px, 0px);
+    }
+
+    50% {
+        transform: translate(15px, 10px);
+    }
+
+    75% {
+        transform: translate(0px, 5px);
+    }
+
+    100% {
+        transform: translate(30px, 0px);
+    }
+}
+
+@keyframes headphone {
+    0% {
+        transform: translate(30px, 20px);
+    }
+    25% {
+        transform: translate(5px, 40px);
+    }
+
+    50% {
+        transform: translate(15px, 10px);
+    }
+
+    75% {
+        transform: translate(0px, 5px);
+    }
+
+    100% {
+        transform: translate(30px, 20px);
+    }
+}
+
+@keyframes camera {
+    0% {
+        transform: translate(20px, -20px);
+    }
+    25% {
+        transform: translate(5px, 20px);
+    }
+
+    50% {
+        transform: translate(0px, 10px);
+    }
+
+    75% {
+        transform: translate(15px, 15px);
+    }
+
+    100% {
+        transform: translate(20px, -20px);
+    }
+
+}
+
+//Intro Mobile
+
+@keyframes camera-tablet {
+        0% {
+            transform: translate(10px, -10px);
+        }
+        25% {
+            transform: translate(5px, 10px);
+        }
+
+        50% {
+            transform: translate(0px, 10px);
+        }
+
+        75% {
+            transform: translate(5px, 5px);
+        }
+
+        100% {
+            transform: translate(10px, -10px);
+        }
+
+    }
+
+@keyframes headphone-tablet {
+    0% {
+        transform: translate(10px, 10px);
+    }
+    25% {
+        transform: translate(5px, 20px);
+    }
+
+    50% {
+        transform: translate(15px, 10px);
+    }
+
+    75% {
+        transform: translate(0px, 5px);
+    }
+
+    100% {
+        transform: translate(10px, 10px);
+    }
+}
+
+@keyframes action-mobile {
+
+    0% {
+        transform: translate(0px, 5px);
+    }
+    25% {
+        transform: translate(5px, 0px);
+    }
+
+    50% {
+        transform: translate(-5px, 10px);
+    }
+
+    75% {
+        transform: translate(10px, -10px);
+    }
+
+    100% {
+        transform: translate(0px, 5px);
+    }
+}
+
+@keyframes heart-mobile {
+    0% {
+        transform: translate(0px, -5px)
+    }
+    50% {
+        transform: translate(-15px, 15px)
+    }
+    75% {
+        transform: translate(-25px, 0)
+    }
+    100% {
+        transform: translate(0px, -5px)
+    }
+}
+
+//Team Animation
+
+@keyframes teamNote {
+    0% {
+        top: 30px;
+        right: 300px;
+    }
+    50% {
+        top: 40px;
+        right: 320px;
+    }
+    75% {
+        top: 10px;
+        right: 345px;
+    }
+    100% {
+        top: 30px;
+        right: 300px;
+    }
+}
+
+@keyframes sphereAnimation {
+    0% {
+        left: -110px;
+        top: 220px;
+    }
+    50% {
+        left: -60px;
+        top: 230px;
+    }
+    75% {
+        left: -70px;
+    }
+    100% {
+        left: -110px;
+        top: 220px;
+    }
+}
+
+@keyframes torusAnimation {
+    0% {
+        top: 404px;
+        right: 15px;
+    }
+    50% {
+        top: 360px;
+        right: 0;
+    }
+    75% {
+        top: 370px;
+    }
+    100% {
+        top: 404px;
+        right: 15px;
+    }
+}
+
+//Team Mobile Animation
+
+@keyframes teamNoteMobile {
+    0% {
+        top: 0;
+        right: 95px;
+    }
+    50% {
+        top: -20px;
+        right: 105px;
+    }
+    75% {
+        top: -30px;
+        right: 100px;
+    }
+    100% {
+        top: 0;
+        right: 95px;
+    }
+}
+
+@keyframes sphereAnimationMobile {
+    0% {
+        left: -110px;
+        top: 220px;
+    }
+    50% {
+        top: 200px;
+    }
+    75% {
+        left: -70px;
+    }
+    100% {
+        left: -110px;
+        top: 220px;
+    }
+}
+
+@keyframes torusAnimationMobile {
+    0% {
+        top: 242px;
+        right: 112px;
+    }
+    50% {
+        top: 220px;
+    }
+    75% {
+        right: 120px;
+    }
+    100% {
+        top: 242px;
+        right: 112px;
+    }
+}
+
+@keyframes torusAnimationMobileSmall {
+    0% {
+        top: 212px;
+        right: 112px;
+    }
+    50% {
+        top: 190px;
+    }
+    75% {
+        right: 120px;
+        top: 200px;
+    }
+    100% {
+        top: 212px;
+        right: 112px;
+    }
+}

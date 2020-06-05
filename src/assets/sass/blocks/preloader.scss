@@ -1,0 +1,445 @@
+.preloader {
+    position: relative;
+    background-color: #170119;
+    > .container {
+        max-width: 1440px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .background__wrapper {
+        position: relative;
+        width: inherit;
+        height: inherit;
+
+        .cover {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+        }
+        .img__layer {
+            position: absolute;
+            max-height: 800px;
+            top: 100px;
+            left: 0;
+            z-index: 1;
+            height: inherit;
+            width: 100%;
+
+            > div {
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .headphone-preloader {
+                top: 20%;
+                left: 40%;
+                width: 100%;
+                height: 100%;
+                max-width: 300px;
+                max-height: 300px;
+                z-index: 1;
+                img {
+                    width: 100%;
+                }
+            }
+            .star-preloader {
+                top: 20%;
+                left: 38%;
+                width: 100%;
+                height: 100%;
+                max-width: 300px;
+                max-height: 300px;
+                z-index: 1;
+                opacity: 0;
+            }
+            .camera-preloader {
+                top: 20%;
+                left: 38%;
+                width: 100%;
+                height: 100%;
+                max-width: 300px;
+                max-height: 300px;
+                opacity: 0;
+            }
+
+            .count-preloader {
+                top: 20%;
+                left: 35%;
+                width: 100%;
+                height: 100%;
+                max-width: 470px;
+                max-height: 300px;
+                .counter {
+                    font-family: $font-family-black;
+                    font-size: 195px;
+                    color: rgba(100, 60, 90, 0.2);
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+
+    }
+    .preloader__text-wrapper {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 72%;
+        left: 40%;
+        max-width: 350px;
+        max-height: 200px;
+        .preloader-text {
+            font-family: $font-family-standart;
+            width: 100%;
+            text-align: center;
+            font-size: 17px;
+            color: #F9A608;
+            z-index: 10;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .preloader {
+        position: relative;
+        background-color: #170119;
+        > .container {
+            max-width: 1440px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .background__wrapper {
+            position: relative;
+            width: inherit;
+            height: inherit;
+
+            .cover {
+                width: inherit;
+                height: inherit;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+            }
+            .img__layer {
+                position: absolute;
+                max-height: 800px;
+                top: 100px;
+                left: 0;
+                z-index: 1;
+                height: inherit;
+                width: 100%;
+
+                > div {
+                    position: absolute;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                .headphone-preloader {
+                    top: 14%;
+                    left: 28%;;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 300px;
+                    max-height: 300px;
+                    z-index: 1;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .star-preloader {
+                    top: 20%;
+                    left: 26%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 300px;
+                    max-height: 300px;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                .camera-preloader {
+                    top: 20%;
+                    left: 38%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 300px;
+                    max-height: 300px;
+                    opacity: 0;
+                }
+
+                .count-preloader {
+                    top: 20%;
+                    left: 25%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 470px;
+                    max-height: 300px;
+                    .counter {
+                        font-size: 145px;
+                    }
+                }
+
+            }
+
+
+        }
+        .preloader__text-wrapper {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 63%;
+            left: 27%;
+            max-width: 350px;
+            max-height: 200px;
+            .preloader-text {
+                font-family: $font-family-standart;
+                width: 100%;
+                text-align: center;
+                font-size: 17px;
+                color: #F9A608;
+                z-index: 10;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .preloader {
+        position: relative;
+        background-color: #170119;
+        > .container {
+            max-width: 1440px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .background__wrapper {
+            position: relative;
+            width: inherit;
+            height: inherit;
+
+            .cover {
+                width: inherit;
+                height: inherit;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+            }
+            .img__layer {
+                position: absolute;
+                max-height: 800px;
+                top: 100px;
+                left: 0;
+                z-index: 1;
+                height: inherit;
+                width: 100%;
+
+                > div {
+                    position: absolute;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                .headphone-preloader {
+                    top: 16%;
+                    left: 20%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 180px;
+                    max-height: 267px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .star-preloader {
+                    top: 20%;
+                    left: 26%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 300px;
+                    max-height: 300px;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                .camera-preloader {
+                    top: 20%;
+                    left: 38%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 300px;
+                    max-height: 300px;
+                    opacity: 0;
+                }
+
+                .count-preloader {
+                    top: 20%;
+                    left: 15%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 470px;
+                    max-height: 300px;
+                    .counter {
+                        font-size: 105px;
+                    }
+
+                }
+
+            }
+
+
+        }
+        .preloader__text-wrapper {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 10%;
+            max-width: 350px;
+            max-height: 200px;
+            .preloader-text {
+                font-family: $font-family-standart;
+                width: 100%;
+                text-align: center;
+                font-size: 17px;
+                color: #F9A608;
+                z-index: 10;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .preloader {
+        position: relative;
+        background-color: #170119;
+        > .container {
+            max-width: 1440px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .background__wrapper {
+            position: relative;
+            width: inherit;
+            height: inherit;
+
+            .cover {
+                width: inherit;
+                height: inherit;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+            }
+            .img__layer {
+                position: absolute;
+                max-height: 800px;
+                top: 100px;
+                left: 0;
+                z-index: 1;
+                height: inherit;
+                width: 100%;
+
+                > div {
+                    position: absolute;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                .headphone-preloader {
+                    top: 20%;
+                    left: 20%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 175px;
+                    max-height: 267px;
+                    z-index: 1;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .star-preloader {
+                    top: 20%;
+                    left: 26%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 300px;
+                    max-height: 300px;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                .camera-preloader {
+                    top: 20%;
+                    left: 38%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 300px;
+                    max-height: 300px;
+                    opacity: 0;
+                }
+
+                .count-preloader {
+                    top: 20%;
+                    left: 15%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 245px;
+                    max-height: 300px;
+                    .counter-img {
+                        width: 100%;
+                        max-width: 245px;
+                    }
+                }
+
+            }
+
+
+        }
+        .preloader__text-wrapper {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 53%;
+            left: 10%;
+            max-width: 300px;
+            max-height: 200px;
+            .preloader-text {
+                font-family: $font-family-standart;
+                width: 100%;
+                text-align: center;
+                font-size: 17px;
+                color: #F9A608;
+                z-index: 10;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}

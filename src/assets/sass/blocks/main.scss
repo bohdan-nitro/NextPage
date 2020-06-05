@@ -9,3 +9,139 @@ section {
     display: flex;
     flex-flow: row nowrap;
 }
+
+body {
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $red;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $red;
+    }
+    cursor: none;
+
+}
+
+
+.cursor {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 7px solid #D2132A;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+    transition: all .3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    box-shadow: 0 20px 100px 10px rgba(242, 232, 240, 0.7);
+
+}
+.link-grow {
+    transform: scale(2);
+    background: #fff;
+    border: 7px solid #ffffff;
+    box-shadow: 0 5px 45px 5px rgba(242, 232, 240, 0.9);
+    transition: all .3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+}
+.hovered-link {
+    color: white;
+
+}
+.cursor__wrapper {
+    position: relative;
+}
+.circle {
+    pointer-events: none;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    transition: background-color, opacity, width, height 0.2s linear;
+    z-index: 11;
+    background-color: $red;
+    align-items: center;
+    transform-origin: 100% 100%;
+    transition-property: background-color, opacity, transform;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    box-shadow: 0 5px 125px 5px rgba(242, 232, 240, 0.7);
+
+
+    .contact {
+        opacity: 0;
+    }
+
+    .open {
+        opacity: 0;
+    }
+
+    &.active {
+        transition: background-color, opacity, width, height 0.2s linear;
+        opacity: 1;
+        width: 70px;
+        height: 70px;
+
+        &.contact {
+
+            .contact {
+                opacity: 1;
+            }
+        }
+
+        &.open {
+            .open {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .circle__wrapper {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        display: flex;
+        .contact {
+            font-family: $font-family-standart;
+            font-size: 10px;
+            font-weight: 700;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            align-items: center;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            transition: all 0.3s linear;
+            text-transform: uppercase;
+        }
+        .open {
+            font-family: $font-family-standart;
+            font-size: 10px;
+            color: #fff;
+            font-weight: 700;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            align-items: center;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            transition: all 0.3s linear;
+            text-transform: uppercase;
+        }
+    }
+}
+

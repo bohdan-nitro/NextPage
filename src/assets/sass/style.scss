@@ -28,10 +28,12 @@ section {
 *:before,
 *:after {
     box-sizing: border-box;
+    cursor: none;
 }
 
 a, ul, li {
     text-decoration: none;
+    cursor: none;
 }
 
 /* Blocks */
@@ -41,6 +43,8 @@ a, ul, li {
 @import "blocks/clients";
 @import "blocks/config";
 @import "blocks/team";
+@import "blocks/animation";
+@import "blocks/preloader";
 
 /* Vendor libs */
 @import "vendor/swiper";

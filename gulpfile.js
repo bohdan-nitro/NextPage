@@ -14,6 +14,9 @@ const plumber = require("gulp-plumber");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const panini = require("panini");
+const babel = require('gulp-babel');
+const sourcemaps = require('gulp-sourcemaps');
+const concat = require('gulp-concat');
 const browsersync = require("browser-sync").create();
 
 
@@ -27,7 +30,7 @@ var path = {
     },
     src: {
         html: "src/*.html",
-        js: "src/assets/js/*.js",
+        js: "src/assets/js/**/*.js",
         css: "src/assets/sass/style.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
     },
@@ -112,7 +115,7 @@ function js() {
 
 function images() {
     return src(path.src.images)
-        .pipe(imagemin())
+        //.pipe(imagemin())
         .pipe(dest(path.build.images));
 }
 
@@ -126,6 +129,18 @@ function watchFiles() {
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.images], images);
 }
+
+
+gulp.task('default', () =>
+    gulp.src('src/**/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['@babel/preset-env']
+        }))
+        .pipe(concat('all.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('dist'))
+);
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images));
 const watch = gulp.parallel(build, watchFiles, browserSync);
