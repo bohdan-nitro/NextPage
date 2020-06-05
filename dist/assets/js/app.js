@@ -180,7 +180,7 @@ for (let i = 0; i < slides.length; i++) {
     let currentMask = $(slides[i]).find('.scroll__mask');
 
     var maskTween = new TimelineMax();
-    maskTween.fromTo(currentMask, 1, {opacity:0}, {opacity:1});
+    maskTween.fromTo(currentMask, 1, {opacity:0}, {opacity:2});
 
     scenes = new ScrollMagic.Scene({
         triggerElement: slides[i],
