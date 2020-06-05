@@ -208,7 +208,6 @@
             top: 0;
             width: 100%;
             height: 100vh;
-            transition: all 0.5s linear;
 
 
             .note {
@@ -219,11 +218,16 @@
                 max-height: 260px;
                 top: 30px;
                 right: 300px;
-                transition: all 0.2s ease-in-out;
                 background-image: url("../../../assets/img/team/note.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 z-index: 1;
+                animation-name: teamNote;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-direction: normal;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
 
             }
 
@@ -235,11 +239,16 @@
                 max-height: 160px;
                 left: -110px;
                 top: 220px;
-                transition: all 0.3s linear;
                 background-image: url("../../../assets/img/team/sphere.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 z-index: 1;
+                animation-name: sphereAnimation;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-direction: normal;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
             }
 
             .torus {
@@ -250,31 +259,18 @@
                 max-height: 220px;
                 top: 404px;
                 right: 15px;
-                transition: all 0.3s linear;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-direction: normal;
+                animation-fill-mode: both;
+                animation-name: torusAnimation;
+                animation-iteration-count: infinite;
                 background-image: url("../../../assets/img/team/torus.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 z-index: 1;
             }
 
-            &.active {
-                .note {
-                    transition: all 0.3s linear;
-                    animation-name: teamNote;
-                    animation-duration: 5s;
-                }
-
-                .sphere {
-                    transition: all 0.3s linear;
-                    animation-name: sphereAnimation;
-                    animation-duration: 5s;
-                }
-                .torus {
-                    animation-duration: 5s;
-                    animation-name: torusAnimation;
-                    transition: all 0.3s linear;
-                }
-            }
         }
 
     }
@@ -477,6 +473,12 @@
                     max-height: 190px;
                     right: 95px;
                     top: 0;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-direction: normal;
+                    animation-fill-mode: both;
+                    animation-name: teamNoteMobile;
+                    animation-iteration-count: infinite;
                 }
                 .sphere {
                     max-width: 135px;
@@ -485,27 +487,15 @@
                 .torus {
                     max-width: 160px;
                     max-height: 160px;
-                    top: 242px;
-                    right: 112px;
+                    top: 20px;
+                    right: 15px;
+                    animation-name: torusAnimationMobile;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-direction: normal;
+                    animation-fill-mode: both;
                 }
-                &.active {
-                    .note {
-                        transition: all 0.3s linear;
-                        animation-name: teamNoteMobile;
-                        animation-duration: 5s;
-                    }
 
-                    .sphere {
-                        transition: all 0.3s linear;
-                        animation-name: sphereAnimationMobile;
-                        animation-duration: 5s;
-                    }
-                    .torus {
-                        transition: all 0.3s linear;
-                        animation-name: torusAnimationMobile;
-                        animation-duration: 5s;
-                    }
-                }
             }
 
 
@@ -554,9 +544,13 @@
                 }
 
                 .torus {
-                    top: 330px;
-                    right: -10px;
-                    max-width: 225px;
+                    top: 20px;
+                    right: 15px;
+                    animation-name: torusAnimationMobile;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-direction: normal;
+                    animation-fill-mode: both;
                 }
 
             }
@@ -631,26 +625,14 @@
                 .torus {
                     max-width: 160px;
                     max-height: 160px;
-                    top: 242px;
-                    right: 112px;
-                }
-                &.active {
-                    .note {
-                        transition: all 0.3s linear;
-                        animation-name: teamNoteMobile;
-                        animation-duration: 5s;
-                    }
+                    top: 20px;
+                    right: 15px;
+                    animation-name: torusAnimationMobile;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-direction: normal;
+                    animation-fill-mode: both;
 
-                    .sphere {
-                        transition: all 0.3s linear;
-                        animation-name: sphereAnimationMobile;
-                        animation-duration: 5s;
-                    }
-                    .torus {
-                        transition: all 0.3s linear;
-                        animation-name: torusAnimationMobile;
-                        animation-duration: 5s;
-                    }
                 }
             }
         }
@@ -771,34 +753,19 @@
                     max-height: 190px;
                     right: 95px;
                     top: 0;
+                    animation-name: teamNoteMobile;
                 }
                 .sphere {
                     max-width: 135px;
                     max-height: 135px;
+                    animation-name: sphereAnimationMobile;
                 }
                 .torus {
                     max-width: 160px;
                     max-height: 160px;
                     top: 212px;
                     right: 112px;
-                }
-                &.active {
-                    .note {
-                        transition: all 0.3s linear;
-                        animation-name: teamNoteMobile;
-                        animation-duration: 5s;
-                    }
-
-                    .sphere {
-                        transition: all 0.3s linear;
-                        animation-name: sphereAnimationMobile;
-                        animation-duration: 5s;
-                    }
-                    .torus {
-                        transition: all 0.3s linear;
-                        animation-name: torusAnimationMobileSmall;
-                        animation-duration: 5s;
-                    }
+                    animation-name:  torusAnimationMobileSmall;
                 }
             }
         }

@@ -1,6 +1,19 @@
 .preloader {
-    position: relative;
-    background-color: #170119;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+
+
+    .preloader__wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #170119;
+    }
+
     > .container {
         max-width: 1440px;
         width: 100%;
@@ -14,13 +27,14 @@
         height: inherit;
 
         .cover {
-            width: inherit;
-            height: inherit;
+            width: 100vw;
+            height: 100vh;
             position: absolute;
             left: 0;
             top: 0;
             background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
         }
+
         .img__layer {
             position: absolute;
             max-height: 800px;
@@ -35,85 +49,110 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
+
+                &.active {
+                    opacity: 1;
+                }
+
             }
 
             .headphone-preloader {
-                top: 20%;
-                left: 40%;
+                top: 24%;
+                left: 41%;
                 width: 100%;
                 height: 100%;
-                max-width: 300px;
+                max-width: 285px;
                 max-height: 300px;
                 z-index: 1;
+                opacity: 0;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            .star-preloader {
+                top: 24%;
+                left: 38%;
+                width: 100%;
+                height: 100%;
+                max-width: 375px;
+                max-height: 375px;
+                z-index: 1;
+                opacity: 0;
+
+                img  {
+                    width: 100%;
+                }
+            }
+
+            .camera-preloader {
+                top: 23%;
+                left: 38%;
+                width: 100%;
+                height: 100%;
+                max-width: 325px;
+                max-height: 325px;
+                opacity: 0;
                 img {
                     width: 100%;
                 }
             }
-            .star-preloader {
-                top: 20%;
-                left: 38%;
-                width: 100%;
-                height: 100%;
-                max-width: 300px;
-                max-height: 300px;
-                z-index: 1;
-                opacity: 0;
-            }
-            .camera-preloader {
-                top: 20%;
-                left: 38%;
-                width: 100%;
-                height: 100%;
-                max-width: 300px;
-                max-height: 300px;
-                opacity: 0;
-            }
 
-            .count-preloader {
-                top: 20%;
-                left: 35%;
-                width: 100%;
-                height: 100%;
-                max-width: 470px;
-                max-height: 300px;
-                .counter {
-                    font-family: $font-family-black;
-                    font-size: 195px;
-                    color: rgba(100, 60, 90, 0.2);
-                    font-weight: 700;
-                }
-            }
 
+        }
+        .count-preloader {
+            position: absolute;
+            top: 22%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            max-width: 750px;
+            max-height: 400px;
+            transform: translateX(-50%);
+            .counter {
+                font-family: $font-family-black;
+                font-size: 360px;
+                color: rgba(100, 60, 90, 0.1);
+                font-weight: 700;
+            }
         }
 
 
     }
+
     .preloader__text-wrapper {
         display: flex;
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 72%;
+        top: 81%;
         left: 40%;
         max-width: 350px;
         max-height: 200px;
+
         .preloader-text {
             font-family: $font-family-standart;
             width: 100%;
             text-align: center;
-            font-size: 17px;
+            font-size: 14px;
             color: #F9A608;
             z-index: 10;
             text-transform: uppercase;
             font-weight: 700;
         }
+
     }
+
 }
 
 @media screen and (max-width: 1000px) {
     .preloader {
         position: relative;
         background-color: #170119;
+        width: 100%;
+        height: 100vh;
         > .container {
             max-width: 1440px;
             width: 100%;
@@ -151,47 +190,43 @@
                 }
 
                 .headphone-preloader {
-                    top: 14%;
-                    left: 28%;;
+                    top: 31%;
+                    left: 32%;
                     width: 100%;
-                    height: 100%;
-                    max-width: 300px;
-                    max-height: 300px;
-                    z-index: 1;
-                    img {
-                        width: 100%;
-                    }
+                    height: 100;
+                    max-width: 240px;
+                    max-height: 200px;
                 }
                 .star-preloader {
-                    top: 20%;
-                    left: 26%;
+                    top: 35%;
+                    left: 31%;
                     width: 100%;
                     height: 100%;
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 265px;
+                    max-height: 260px;
                     z-index: 1;
                     opacity: 0;
                 }
                 .camera-preloader {
-                    top: 20%;
-                    left: 38%;
+                    top: 35%;
+                    left: 29%;
                     width: 100%;
                     height: 100%;
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 240px;
+                    max-height: 240px;;
                     opacity: 0;
                 }
 
-                .count-preloader {
-                    top: 20%;
-                    left: 25%;
-                    width: 100%;
-                    height: 100%;
-                    max-width: 470px;
-                    max-height: 300px;
-                    .counter {
-                        font-size: 145px;
-                    }
+            }
+            .count-preloader {
+                top: 35%;
+                left: 48%;
+                width: 100%;
+                height: 100%;
+                max-width: 417px;
+                max-height: 400px;
+                .counter {
+                    font-size: 210px;
                 }
 
             }
@@ -203,15 +238,15 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            top: 63%;
-            left: 27%;
+            top: 65%;
+            left: 26%;
             max-width: 350px;
             max-height: 200px;
             .preloader-text {
                 font-family: $font-family-standart;
                 width: 100%;
                 text-align: center;
-                font-size: 17px;
+                font-size: 15px;
                 color: #F9A608;
                 z-index: 10;
                 text-transform: uppercase;
@@ -225,6 +260,120 @@
     .preloader {
         position: relative;
         background-color: #170119;
+        width: 100%;
+        height: 100vh;
+        > .container {
+            max-width: 700px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .background__wrapper {
+            position: relative;
+            width: inherit;
+            height: inherit;
+
+            .cover {
+                width: inherit;
+                height: inherit;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+            }
+            .img__layer {
+                position: absolute;
+                max-height: 450px;
+                top: 100px;
+                left: 0;
+                z-index: 1;
+                height: inherit;
+                width: 100%;
+
+                > div {
+                    position: absolute;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                .headphone-preloader {
+                    top: 42%;
+                    left: 32%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 200px;
+                    max-height: 200px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .star-preloader {
+                    top: 45%;
+                    left: 33%;
+                    width: 100%;
+                    height: 100;
+                    max-width: 215px;
+                    max-height: 200px;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                .camera-preloader {
+                    top: 48%;
+                    left: 33%;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 180px;
+                    max-height: 180px;
+                    opacity: 0;
+                }
+
+            }
+            .count-preloader {
+                top: 30%;
+                left: 53%;
+                width: 100%;
+                height: 100%;
+                max-width: 417px;
+                max-height: 400px;
+                .counter {
+                    font-size: 190px;
+                }
+
+            }
+
+
+        }
+        .preloader__text-wrapper {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 63%;
+            left: 22%;
+            max-width: 350px;
+            max-height: 200px;
+            .preloader-text {
+                font-family: $font-family-standart;
+                width: 100%;
+                text-align: center;
+                font-size: 15px;
+                color: #F9A608;
+                z-index: 10;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .preloader {
+        position: relative;
+        background-color: #170119;
+        width: 100%;
+        height: 100vh;
         > .container {
             max-width: 1440px;
             width: 100%;
@@ -263,66 +412,62 @@
 
                 .headphone-preloader {
                     top: 16%;
-                    left: 20%;
+                    left: 29%;
                     width: 100%;
                     height: 100%;
-                    max-width: 180px;
-                    max-height: 267px;
+                    max-width: 145px;
+                    max-height: 140px;
                     img {
                         width: 100%;
                     }
                 }
                 .star-preloader {
-                    top: 20%;
-                    left: 26%;
+                    top: 15%;
+                    left: 21%;
                     width: 100%;
                     height: 100%;
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 200px;
+                    max-height: 200px;
                     z-index: 1;
                     opacity: 0;
                 }
                 .camera-preloader {
-                    top: 20%;
-                    left: 38%;
+                    top: 14%;
+                    left: 20%;
                     width: 100%;
                     height: 100%;
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 180px;
+                    max-height: 180px;
                     opacity: 0;
                 }
-
-                .count-preloader {
-                    top: 20%;
-                    left: 15%;
-                    width: 100%;
-                    height: 100%;
-                    max-width: 470px;
-                    max-height: 300px;
-                    .counter {
-                        font-size: 105px;
-                    }
-
+            }
+            .count-preloader {
+                top: 30%;
+                left: 58%;
+                width: 100%;
+                height: 100%;
+                max-width: 300px;
+                max-height: 400px;
+                .counter {
+                    font-size: 130px;
                 }
 
             }
-
-
         }
         .preloader__text-wrapper {
             display: flex;
             position: absolute;
             width: 100%;
             height: 100%;
-            top: 50%;
-            left: 10%;
-            max-width: 350px;
+            top: 62%;
+            left: 8%;
+            max-width: 300px;
             max-height: 200px;
             .preloader-text {
                 font-family: $font-family-standart;
                 width: 100%;
                 text-align: center;
-                font-size: 17px;
+                font-size: 14px;
                 color: #F9A608;
                 z-index: 10;
                 text-transform: uppercase;
@@ -332,10 +477,12 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 460px) and (max-height: 825px) {
     .preloader {
         position: relative;
         background-color: #170119;
+        width: 100%;
+        height: 100vh;
         > .container {
             max-width: 1440px;
             width: 100%;
@@ -373,68 +520,63 @@
                 }
 
                 .headphone-preloader {
-                    top: 20%;
-                    left: 20%;
+                    top: 29%;
+                    left: 29%;
                     width: 100%;
                     height: 100%;
-                    max-width: 175px;
-                    max-height: 267px;
-                    z-index: 1;
+                    max-width: 150px;
+                    max-height: 140px;
                     img {
                         width: 100%;
                     }
                 }
                 .star-preloader {
-                    top: 20%;
-                    left: 26%;
+                    top: 27%;
+                    left: 25%;
                     width: 100%;
                     height: 100%;
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 200px;
+                    max-height: 200px;
                     z-index: 1;
                     opacity: 0;
                 }
                 .camera-preloader {
-                    top: 20%;
-                    left: 38%;
+                    top: 27%;
+                    left: 24%;
                     width: 100%;
                     height: 100%;
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 180px;
+                    max-height: 180px;
                     opacity: 0;
                 }
-
-                .count-preloader {
-                    top: 20%;
-                    left: 15%;
-                    width: 100%;
-                    height: 100%;
-                    max-width: 245px;
-                    max-height: 300px;
-                    .counter-img {
-                        width: 100%;
-                        max-width: 245px;
-                    }
+            }
+            .count-preloader {
+                top: 40%;
+                left: 55%;
+                width: 100%;
+                height: 100%;
+                max-width: 300px;
+                max-height: 400px;
+                .counter {
+                    font-size: 130px;
                 }
 
             }
-
-
         }
         .preloader__text-wrapper {
             display: flex;
             position: absolute;
             width: 100%;
             height: 100%;
-            top: 53%;
-            left: 10%;
+            top: 70%;
+            left: 15%;
             max-width: 300px;
             max-height: 200px;
             .preloader-text {
                 font-family: $font-family-standart;
                 width: 100%;
                 text-align: center;
-                font-size: 17px;
+                font-size: 14px;
                 color: #F9A608;
                 z-index: 10;
                 text-transform: uppercase;

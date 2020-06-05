@@ -3,6 +3,7 @@ section {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    margin: 0 !important;
 }
 
 .row {
@@ -11,6 +12,10 @@ section {
 }
 
 body {
+
+    &.fixed {
+        overflow-y: hidden;
+    }
 
     &::-webkit-scrollbar {
         width: 12px;
@@ -33,7 +38,7 @@ body {
 
 
 .cursor {
-    position: absolute;
+    position: fixed;
     width: 15px;
     height: 15px;
     border: 7px solid #D2132A;
@@ -47,6 +52,7 @@ body {
     box-shadow: 0 20px 100px 10px rgba(242, 232, 240, 0.7);
 
 }
+
 .link-grow {
     transform: scale(2);
     background: #fff;
@@ -56,16 +62,19 @@ body {
     transition-property: background, transform;
     transform-origin: 100% 100%;
 }
+
 .hovered-link {
     color: white;
 
 }
+
 .cursor__wrapper {
     position: relative;
 }
+
 .circle {
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -145,3 +154,13 @@ body {
     }
 }
 
+.scroll__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1000;
+    pointer-events: none;
+}

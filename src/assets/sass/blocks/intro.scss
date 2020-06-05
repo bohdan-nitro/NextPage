@@ -750,7 +750,7 @@
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 360px) {
     .intro {
         .background__wrapper {
             .img__layers {
@@ -765,8 +765,8 @@
                     &_headphone {
                         width: 80px;
                         height: 85px;
-                        top: 35%;
-                        left: 5%;
+                        top: 30%;
+                        left: 3%;
                     }
 
                     &_camera {
