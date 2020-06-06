@@ -164,3 +164,9 @@ body {
     z-index: 1000;
     pointer-events: none;
 }
+
+@media screen and (max-width: 768px) {
+    .cursor__wrapper {
+        display: none;
+    }
+}

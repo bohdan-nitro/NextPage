@@ -992,9 +992,13 @@ a, ul, li {
     background-color: #fff;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .header > .row {
         padding: 0 20px 0 20px;
+    }
+
+    .header > .row .nav .nav__contact:hover {
+        opacity: 1;
     }
 }
 
@@ -1210,6 +1214,12 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #000;
     z-index: 1000;
     pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .cursor__wrapper {
+        display: none;
+    }
 }
 
 .clients {
@@ -5272,6 +5282,10 @@ body::-webkit-scrollbar-thumb:hover {
     transition: all 0.6s linear;
 }
 
+.team .contact-us__wrapper .link::before:hover .cursor {
+    display: none;
+}
+
 .team .contact-us__wrapper .link:hover::before {
     background: -o-linear-gradient(96.29deg, #B10217 10.23%, #DD041F 69.59%);
     background: linear-gradient(353.71deg, #B10217 10.23%, #DD041F 69.59%);
@@ -6812,7 +6826,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     top: 22%;
     left: 50%;
-    width: 100%;
+    width: auto;
     height: 100%;
     max-width: 750px;
     max-height: 400px;
