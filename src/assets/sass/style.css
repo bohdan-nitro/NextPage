@@ -516,6 +516,58 @@ a, ul, li {
     line-height: 18px; }
   .intro .content__wrapper .container .viewers__wrapper .viewers__content .viewers__name {
     font-size: 12px; } }
+@media screen and (max-width: 380px) and (max-height: 650px) {
+  .intro .background__wrapper .img__layers .focus__purple {
+    width: 60px;
+    height: 60px;
+    left: 55%; }
+  .intro .background__wrapper .img__layers .focus__headphone {
+    width: 80px;
+    height: 85px;
+    top: 37%;
+    left: 3%; }
+  .intro .background__wrapper .img__layers .focus__camera {
+    width: 90px;
+    height: 90px;
+    bottom: 23%; }
+  .intro .background__wrapper .img__layers .focus__note {
+    width: 50px;
+    height: 50px;
+    bottom: 26%;
+    left: 27%; }
+  .intro .background__wrapper .img__layers .focus__heart {
+    width: 50px;
+    height: 50px;
+    bottom: 25%;
+    right: 29%;
+    animation-name: heart-mobile; }
+  .intro .background__wrapper .img__layers .focus__action {
+    width: 80px;
+    height: 85px;
+    bottom: 28%;
+    right: 4%; }
+  .intro .background__wrapper .img__layers .focus__donat-red {
+    width: 50px;
+    height: 50px;
+    bottom: 15%;
+    right: 8%; }
+  .intro .background__wrapper .img__layers .focus__youtube {
+    width: 100px;
+    height: 100px;
+    top: 14%;
+    right: 10%; }
+  .intro .background__wrapper .img__layers .focus__circle-red {
+    left: 5%;
+    top: 5%;
+    width: 24px;
+    height: 24px; }
+  .intro .content__wrapper .container .text__content {
+    padding-top: 43vh; }
+  .intro .content__wrapper .container .viewers__wrapper .viewers__content .viewers__count {
+    font-size: 22px;
+    line-height: 18px; }
+  .intro .content__wrapper .container .viewers__wrapper .viewers__content .viewers__name {
+    font-size: 12px; } }
 .header {
   position: absolute;
   top: 33px;
@@ -2593,6 +2645,414 @@ body {
       font-size: 9px;
       line-height: 0;
       padding: 5px 5px; } }
+@media screen and (max-width: 450px) and (max-height: 650px) {
+  .config .cover {
+    z-index: 7; }
+  .config .background__wrapper > .container {
+    max-width: 345px;
+    flex-flow: column-reverse wrap; }
+  .config .background__wrapper .option-wrapper .option__title {
+    transform: translateY(300px);
+    margin-bottom: 20px; }
+  .config .background__wrapper .option-wrapper .option__image-wrapper {
+    top: 66%;
+    position: absolute;
+    max-width: 230px; }
+    .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem {
+      max-height: 13vh; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem .image .img {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem .image .img-hover {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(2) .image .img-hover {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(3) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(4) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(5) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(6) .image .img-hover {
+        max-width: 89px;
+        top: 16px;
+        left: 0; }
+  .config .background__wrapper .right__side-wrapper {
+    max-height: 40vh;
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    max-width: 250px; }
+    .config .background__wrapper .right__side-wrapper .img__wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 230px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__config-big {
+        width: 100%;
+        height: 100%;
+        max-width: 320px;
+        max-height: 320px;
+        top: 95px;
+        left: 0; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__circle-red {
+        width: 30px;
+        height: 30px;
+        left: 40px;
+        top: 106px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__circle-red-sm {
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 140px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__heart {
+        width: 60px;
+        height: 60px;
+        bottom: 0;
+        left: 80%; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__star-big {
+        top: 95px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__lupa-big {
+        top: 100px;
+        max-width: 190px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__action-big {
+        top: 140px;
+        max-width: 185px;
+        left: 24px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__headphone-big {
+        top: 100px;
+        max-width: 200px;
+        max-height: 220px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="first"] .option__heart {
+        left: -20px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="first"] .option__circle-red {
+        left: 155px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="second"] .option__heart {
+        bottom: 115px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="third"] .option__heart {
+        bottom: 115px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="four"] .option__circle-red {
+        left: 200px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="four"] .option__circle-red-sm {
+        top: 260px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="five"] .option__circle-red {
+        left: 200px;
+        top: 100px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="five"] .option__circle-red-sm {
+        top: 250px;
+        left: 179px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="six"] .option__circle-red {
+        left: 200px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="six"] .option__circle-red-sm {
+        right: 0; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description {
+      line-height: 14px;
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-star {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-star .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-graphik {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-graphik .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-lupa {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-lupa .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-action {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-action .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-headphone {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-headphone .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .link__wrapper .option__link {
+      font-size: 9px;
+      line-height: 0;
+      padding: 5px 5px; } }
+@media screen and (min-width: 365px) and (max-width: 450px) and (max-height: 950px) {
+  .config .cover {
+    z-index: 7; }
+  .config .background__wrapper > .container {
+    max-width: 345px;
+    flex-flow: column-reverse wrap; }
+  .config .background__wrapper .option-wrapper .option__title {
+    transform: translateY(290px);
+    margin-bottom: 20px; }
+  .config .background__wrapper .option-wrapper .option__image-wrapper {
+    top: 66%;
+    position: absolute;
+    max-width: 230px; }
+    .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem {
+      max-height: 10vh; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem .image .img {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem .image .img-hover {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(2) .image .img-hover {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(3) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(4) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(5) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(6) .image .img-hover {
+        max-width: 89px;
+        top: 16px;
+        left: 0; }
+  .config .background__wrapper .right__side-wrapper {
+    max-height: 40vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    max-width: 230px; }
+    .config .background__wrapper .right__side-wrapper .img__wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 240px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__config-big {
+        width: 100%;
+        height: 100%;
+        max-width: 320px;
+        max-height: 320px;
+        top: 95px;
+        left: 0; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__circle-red {
+        width: 30px;
+        height: 30px;
+        left: 40px;
+        top: 106px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__circle-red-sm {
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 140px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__heart {
+        width: 60px;
+        height: 60px;
+        bottom: 0;
+        left: 80%; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__star-big {
+        top: 95px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__lupa-big {
+        top: 100px;
+        max-width: 190px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__action-big {
+        top: 140px;
+        max-width: 185px;
+        left: 24px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__headphone-big {
+        top: 100px;
+        max-width: 200px;
+        max-height: 220px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="first"] .option__heart {
+        left: -20px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="first"] .option__circle-red {
+        left: 155px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="second"] .option__heart {
+        bottom: 115px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="third"] .option__heart {
+        bottom: 115px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="four"] .option__circle-red {
+        left: 200px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="four"] .option__circle-red-sm {
+        top: 260px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="five"] .option__circle-red {
+        left: 200px;
+        top: 100px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="five"] .option__circle-red-sm {
+        top: 250px;
+        left: 179px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="six"] .option__circle-red {
+        left: 200px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="six"] .option__circle-red-sm {
+        right: 0; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description {
+      line-height: 14px;
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-star {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-star .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-graphik {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-graphik .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-lupa {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-lupa .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-action {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-action .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-headphone {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-headphone .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .link__wrapper .option__link {
+      font-size: 9px;
+      line-height: 0;
+      padding: 5px 5px; } }
+@media screen and (min-width: 370px) and (max-width: 450px) and (min-height: 700px) {
+  .config .cover {
+    z-index: 7; }
+  .config .background__wrapper > .container {
+    max-width: 345px;
+    flex-flow: column-reverse wrap; }
+  .config .background__wrapper .option-wrapper .option__title {
+    transform: translateY(420px);
+    margin-bottom: 20px; }
+  .config .background__wrapper .option-wrapper .option__image-wrapper {
+    top: 66%;
+    position: absolute;
+    max-width: 250px; }
+    .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem {
+      max-height: 10vh; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem .image .img {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem .image .img-hover {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(2) .image .img-hover {
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(3) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(4) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(5) .image .img-hover {
+        max-width: 120px;
+        top: 10px;
+        left: -4px; }
+      .config .background__wrapper .option-wrapper .option__image-wrapper .option__elem:nth-child(6) .image .img-hover {
+        max-width: 89px;
+        top: 16px;
+        left: 0; }
+  .config .background__wrapper .right__side-wrapper {
+    max-height: 40vh;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    max-width: 230px; }
+    .config .background__wrapper .right__side-wrapper .img__wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 250px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__config-big {
+        width: 100%;
+        height: 100%;
+        max-width: 320px;
+        max-height: 320px;
+        top: 95px;
+        left: 0; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__circle-red {
+        width: 30px;
+        height: 30px;
+        left: 40px;
+        top: 106px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__circle-red-sm {
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 140px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__heart {
+        width: 60px;
+        height: 60px;
+        bottom: 0;
+        left: 80%; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__star-big {
+        top: 95px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__lupa-big {
+        top: 100px;
+        max-width: 190px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__action-big {
+        top: 140px;
+        max-width: 185px;
+        left: 24px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper .option__headphone-big {
+        top: 100px;
+        max-width: 200px;
+        max-height: 220px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="first"] .option__heart {
+        left: -20px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="first"] .option__circle-red {
+        left: 155px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="second"] .option__heart {
+        bottom: 115px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="third"] .option__heart {
+        bottom: 115px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="four"] .option__circle-red {
+        left: 200px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="four"] .option__circle-red-sm {
+        top: 260px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="five"] .option__circle-red {
+        left: 200px;
+        top: 100px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="five"] .option__circle-red-sm {
+        top: 250px;
+        left: 179px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="six"] .option__circle-red {
+        left: 200px; }
+      .config .background__wrapper .right__side-wrapper .img__wrapper.active[data-id="six"] .option__circle-red-sm {
+        right: 0; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description {
+      line-height: 14px;
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-star {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-star .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-graphik {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-graphik .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-lupa {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-lupa .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-action {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-action .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-headphone {
+      font-size: 18px; }
+      .config .background__wrapper .right__side-wrapper .title__wrapper .option__description-headphone .subtittle {
+        font-size: 18px; }
+    .config .background__wrapper .right__side-wrapper .link__wrapper .option__link {
+      font-size: 9px;
+      line-height: 0;
+      padding: 5px 5px; } }
 .team {
   background: #FFECEE;
   position: relative; }
@@ -3042,6 +3502,43 @@ body {
     top: 212px;
     right: 112px;
     animation-name: torusAnimationMobileSmall; }
+  .team .team-bottom .contact-us__wrapper {
+    max-height: 120px; }
+    .team .team-bottom .contact-us__wrapper span {
+      font-size: 22px;
+      font-weight: 700; }
+      .team .team-bottom .contact-us__wrapper span::after {
+        width: 24px;
+        height: 24px; }
+  .team .footer .container {
+    padding: 0 20px; }
+  .team .footer .text {
+    font-size: 12px; }
+  .team .footer .link span {
+    font-size: 10px; } }
+@media screen and (min-width: 320px) and (max-width: 400px) and (max-height: 600px) {
+  .team .title_wrapper {
+    margin-bottom: 10px; }
+    .team .title_wrapper .team__title {
+      font-size: 24px; }
+  .team .content__wrapper {
+    max-height: 36vh; }
+    .team .content__wrapper .img__wrapper-hidden .note {
+      max-width: 175px;
+      max-height: 190px;
+      right: 95px;
+      top: 0;
+      animation-name: teamNoteMobile; }
+    .team .content__wrapper .img__wrapper-hidden .sphere {
+      max-width: 115px;
+      max-height: 115px;
+      animation-name: sphereAnimationMobile; }
+    .team .content__wrapper .img__wrapper-hidden .torus {
+      max-width: 140px;
+      max-height: 140px;
+      top: 212px;
+      right: 112px;
+      animation-name: torusAnimationMobileSmall; }
   .team .team-bottom .contact-us__wrapper {
     max-height: 120px; }
     .team .team-bottom .contact-us__wrapper span {
