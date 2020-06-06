@@ -1,5 +1,7 @@
 import {CountUp} from './components/countUp.min.js';
 
+document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+
 let mouseCursor = document.querySelector(".cursor");
 let circleText = document.querySelector(".circle");
 let imageHover = document.querySelector(".option__elem");
