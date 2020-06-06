@@ -87,7 +87,7 @@ a, ul, li {
     top: 180px;
     width: 120px;
     height: 125px;
-    background-image: url(../../../assets/img/main-focus-purple.png);
+    background-image: url(../img/main-focus-purple.png);
     -webkit-animation-name: up-down;
     animation-name: up-down;
     -webkit-animation-duration: 10s;
@@ -101,7 +101,7 @@ a, ul, li {
     top: 100px;
     width: 200px;
     height: 240px;
-    background-image: url(../../../assets/img/main-headphone-purple.png);
+    background-image: url(../img/main-headphone-purple.png);
     -webkit-animation-name: headphone;
     animation-name: headphone;
     -webkit-animation-duration: 9s;
@@ -115,7 +115,7 @@ a, ul, li {
     height: 44px;
     left: 160px;
     top: 195px;
-    background-image: url(../../../assets/img/main-circle.png);
+    background-image: url(../img/main-circle.png);
     -webkit-animation-name: up-down;
     animation-name: up-down;
     -webkit-animation-duration: 9s;
@@ -129,7 +129,7 @@ a, ul, li {
     height: 290px;
     left: 50px;
     bottom: 75px;
-    background-image: url(../../../assets/img/main-camera.png);
+    background-image: url(../img/main-camera.png);
     -webkit-animation-name: camera;
     animation-name: camera;
     -webkit-animation-duration: 9s;
@@ -143,7 +143,7 @@ a, ul, li {
     height: 120px;
     left: 325px;
     bottom: 50px;
-    background-image: url(../../../assets/img/main-note.png);
+    background-image: url(../img/main-note.png);
     -webkit-animation-name: note;
     animation-name: note;
     -webkit-animation-duration: 10s;
@@ -157,7 +157,7 @@ a, ul, li {
     height: 100px;
     right: 465px;
     bottom: 120px;
-    background-image: url(../../../assets/img/main-heart-purple.png);
+    background-image: url(../img/main-heart-purple.png);
     -webkit-animation-name: heart;
     animation-name: heart;
     -webkit-animation-duration: 9s;
@@ -171,7 +171,7 @@ a, ul, li {
     bottom: 150px;
     width: 270px;
     height: 295px;
-    background-image: url(../../../assets/img/main-action.png);
+    background-image: url(../img/main-action.png);
     -webkit-animation-name: action;
     animation-name: action;
     -webkit-animation-duration: 9s;
@@ -185,7 +185,7 @@ a, ul, li {
     bottom: 40px;
     width: 190px;
     height: 130px;
-    background-image: url(../../../assets/img/main-focus.png);
+    background-image: url(../img/main-focus.png);
     -webkit-animation-name: circle;
     animation-name: circle;
     -webkit-animation-duration: 9s;
@@ -199,7 +199,7 @@ a, ul, li {
     top: 325px;
     width: 60px;
     height: 60px;
-    background-image: url(../../../assets/img/red-dot.png);
+    background-image: url(../img/red-dot.png);
     -webkit-animation-name: camera;
     animation-name: camera;
     -webkit-animation-duration: 9s;
@@ -213,7 +213,7 @@ a, ul, li {
     top: 25px;
     width: 300px;
     height: 245px;
-    background-image: url(../../../assets/img/main-youtube.png);
+    background-image: url(../img/main-youtube.png);
     -webkit-animation-name: youtube;
     animation-name: youtube;
     -webkit-animation-duration: 9s;
@@ -1360,7 +1360,7 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: url(../../../assets/img/clients/gear_red.png) no-repeat center center;
+    background: url(../img/clients/gear_red.png) no-repeat center center;
     background-size: contain;
 }
 
@@ -1384,7 +1384,7 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: url(../../../assets/img/clients/clients-hover-arrow.svg) no-repeat center center;
+    background: url(../img/clients/clients-hover-arrow.svg) no-repeat center center;
     background-size: contain;
 }
 
@@ -2015,7 +2015,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 44px;
     left: 40px;
     top: 110px;
-    background-image: url(../../../assets/img/main-circle.png);
+    background-image: url(../img/main-circle.png);
 }
 
 .config .right__side-wrapper .img__wrapper .option__circle-red-sm {
@@ -2024,7 +2024,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 44px;
     right: 170px;
     top: 180px;
-    background-image: url(../../../assets/img/main-circle.png);
+    background-image: url(../img/main-circle.png);
 }
 
 .config .right__side-wrapper .img__wrapper .option__heart {
@@ -2033,7 +2033,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 100px;
     left: 50px;
     bottom: 120px;
-    background-image: url(../../../assets/img/main-heart-purple.png);
+    background-image: url(../img/main-heart-purple.png);
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -2047,7 +2047,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 470px;
     top: 60px;
     left: 160px;
-    background-image: url("../../../assets/img/options/big/gear2.png");
+    background-image: url("../img/options/big/gear2.png");
     z-index: -1;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -2062,7 +2062,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 470px;
     top: 70px;
     left: 170px;
-    background-image: url("../../../assets/img/options/big/star_big.png");
+    background-image: url("../img/options/big/star_big.png");
     z-index: -1;
 }
 
@@ -2074,7 +2074,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 470px;
     top: 50px;
     left: 120px;
-    background-image: url("../../../assets/img/options/big/graphik_big.png");
+    background-image: url("../img/options/big/graphik_big.png");
     z-index: -1;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -2089,7 +2089,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 470px;
     top: 80px;
     left: 170px;
-    background-image: url("../../../assets/img/options/big/Lupa_big.png");
+    background-image: url("../img/options/big/Lupa_big.png");
     z-index: -1;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -2105,7 +2105,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 470px;
     top: 170px;
     left: 200px;
-    background-image: url("../../../assets/img/options/big/CLAQUETA_basica.png");
+    background-image: url("../img/options/big/CLAQUETA_basica.png");
     z-index: -1;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -2121,7 +2121,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 470px;
     top: 96px;
     left: 170px;
-    background-image: url("../../../assets/img/options/big/Headphone_JD.png");
+    background-image: url("../img/options/big/Headphone_JD.png");
     z-index: -1;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -4382,7 +4382,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 260px;
     top: 30px;
     right: 300px;
-    background-image: url("../../../assets/img/team/note.png");
+    background-image: url("../img/team/note.png");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -4408,7 +4408,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-height: 160px;
     left: -110px;
     top: 220px;
-    background-image: url("../../../assets/img/team/sphere.png");
+    background-image: url("../img/team/sphere.png");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -4446,7 +4446,7 @@ body::-webkit-scrollbar-thumb:hover {
     animation-name: torusAnimation;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    background-image: url("../../../assets/img/team/torus.png");
+    background-image: url("../img/team/torus.png");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -4524,7 +4524,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: block;
     width: 35px;
     height: 35px;
-    background: url("../../../assets/img/contact-us-arrow.svg") no-repeat center center;
+    background: url("../img/contact-us-arrow.svg") no-repeat center center;
     background-size: contain;
     position: absolute;
     right: -10px;
@@ -4569,7 +4569,7 @@ body::-webkit-scrollbar-thumb:hover {
     vertical-align: middle;
     width: 19px;
     height: 19px;
-    background-image: url("../../../assets/img/NP.png");
+    background-image: url("../img/NP.png");
 }
 
 .team .footer .link span {

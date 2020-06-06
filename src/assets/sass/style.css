@@ -63,7 +63,7 @@ a, ul, li {
         top: 180px;
         width: 120px;
         height: 125px;
-        background-image: url(assets/img/main-focus-purple.png);
+        background-image: url(../img/main-focus-purple.png);
         animation-name: up-down;
         animation-duration: 10s;
         animation-iteration-count: infinite; }
@@ -72,7 +72,7 @@ a, ul, li {
         top: 100px;
         width: 200px;
         height: 240px;
-        background-image: url(assets/img/main-headphone-purple.png);
+        background-image: url(../img/main-headphone-purple.png);
         animation-name: headphone;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -81,7 +81,7 @@ a, ul, li {
         height: 44px;
         left: 160px;
         top: 195px;
-        background-image: url(assets/img/main-circle.png);
+        background-image: url(../img/main-circle.png);
         animation-name: up-down;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -90,7 +90,7 @@ a, ul, li {
         height: 290px;
         left: 50px;
         bottom: 75px;
-        background-image: url(assets/img/main-camera.png);
+        background-image: url(../img/main-camera.png);
         animation-name: camera;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -99,7 +99,7 @@ a, ul, li {
         height: 120px;
         left: 325px;
         bottom: 50px;
-        background-image: url(assets/img/main-note.png);
+        background-image: url(../img/main-note.png);
         animation-name: note;
         animation-duration: 10s;
         animation-iteration-count: infinite; }
@@ -108,7 +108,7 @@ a, ul, li {
         height: 100px;
         right: 465px;
         bottom: 120px;
-        background-image: url(assets/img/main-heart-purple.png);
+        background-image: url(../img/main-heart-purple.png);
         animation-name: heart;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -117,7 +117,7 @@ a, ul, li {
         bottom: 150px;
         width: 270px;
         height: 295px;
-        background-image: url(assets/img/main-action.png);
+        background-image: url(../img/main-action.png);
         animation-name: action;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -126,7 +126,7 @@ a, ul, li {
         bottom: 40px;
         width: 190px;
         height: 130px;
-        background-image: url(assets/img/main-focus.png);
+        background-image: url(../img/main-focus.png);
         animation-name: circle;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -135,7 +135,7 @@ a, ul, li {
         top: 325px;
         width: 60px;
         height: 60px;
-        background-image: url(assets/img/red-dot.png);
+        background-image: url(../img/red-dot.png);
         animation-name: camera;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -144,7 +144,7 @@ a, ul, li {
         top: 25px;
         width: 300px;
         height: 245px;
-        background-image: url(assets/img/main-youtube.png);
+        background-image: url(../img/main-youtube.png);
         animation-name: youtube;
         animation-duration: 9s;
         animation-iteration-count: infinite; }
@@ -877,7 +877,7 @@ body {
                   top: 130%;
                   left: 30%;
                   transform: translate(-50%, -50%);
-                  background: url(../../../assets/img/clients/gear_red.png) no-repeat center center;
+                  background: url(../img/clients/gear_red.png) no-repeat center center;
                   background-size: contain; }
               .clients .clients__grid .grid .scroll-wrapper .client__elem .hover__layer .text__wrapper .link-text {
                 position: relative;
@@ -895,7 +895,7 @@ body {
                   right: -5px;
                   top: 50%;
                   transform: translateY(-50%);
-                  background: url(../../../assets/img/clients/clients-hover-arrow.svg) no-repeat center center;
+                  background: url(../img/clients/clients-hover-arrow.svg) no-repeat center center;
                   background-size: contain; }
           .clients .clients__grid .grid .scroll-wrapper .client__elem:hover .hover__layer {
             opacity: 1; }
@@ -1281,21 +1281,21 @@ body {
       height: 44px;
       left: 40px;
       top: 110px;
-      background-image: url(../../../assets/img/main-circle.png); }
+      background-image: url(../img/main-circle.png); }
     .config .right__side-wrapper .img__wrapper .option__circle-red-sm {
       position: absolute;
       width: 44px;
       height: 44px;
       right: 170px;
       top: 180px;
-      background-image: url(../../../assets/img/main-circle.png); }
+      background-image: url(../img/main-circle.png); }
     .config .right__side-wrapper .img__wrapper .option__heart {
       position: absolute;
       width: 100px;
       height: 100px;
       left: 50px;
       bottom: 120px;
-      background-image: url(../../../assets/img/main-heart-purple.png);
+      background-image: url(../img/main-heart-purple.png);
       transition: all 0.4s ease; }
     .config .right__side-wrapper .img__wrapper .option__config-big {
       position: absolute;
@@ -1305,7 +1305,7 @@ body {
       max-height: 470px;
       top: 60px;
       left: 160px;
-      background-image: url("../../../assets/img/options/big/gear2.png");
+      background-image: url("../img/options/big/gear2.png");
       z-index: -1;
       transition: all 0.4s ease; }
     .config .right__side-wrapper .img__wrapper .option__star-big {
@@ -1316,7 +1316,7 @@ body {
       max-height: 470px;
       top: 70px;
       left: 170px;
-      background-image: url("../../../assets/img/options/big/star_big.png");
+      background-image: url("../img/options/big/star_big.png");
       z-index: -1; }
     .config .right__side-wrapper .img__wrapper .option__graphik-big {
       position: absolute;
@@ -1326,7 +1326,7 @@ body {
       max-height: 470px;
       top: 50px;
       left: 120px;
-      background-image: url("../../../assets/img/options/big/graphik_big.png");
+      background-image: url("../img/options/big/graphik_big.png");
       z-index: -1;
       transition: all 0.4s ease; }
     .config .right__side-wrapper .img__wrapper .option__lupa-big {
@@ -1337,7 +1337,7 @@ body {
       max-height: 470px;
       top: 80px;
       left: 170px;
-      background-image: url("../../../assets/img/options/big/Lupa_big.png");
+      background-image: url("../img/options/big/Lupa_big.png");
       z-index: -1;
       transition: all 0.4s ease;
       background-repeat: no-repeat; }
@@ -1349,7 +1349,7 @@ body {
       max-height: 470px;
       top: 170px;
       left: 200px;
-      background-image: url("../../../assets/img/options/big/CLAQUETA_basica.png");
+      background-image: url("../img/options/big/CLAQUETA_basica.png");
       z-index: -1;
       transition: all 0.4s ease;
       background-repeat: no-repeat; }
@@ -1361,7 +1361,7 @@ body {
       max-height: 470px;
       top: 96px;
       left: 170px;
-      background-image: url("../../../assets/img/options/big/Headphone_JD.png");
+      background-image: url("../img/options/big/Headphone_JD.png");
       z-index: -1;
       transition: all 0.4s ease; }
     .config .right__side-wrapper .img__wrapper[data-id="first"] .option__heart {
@@ -2727,7 +2727,7 @@ body {
         max-height: 260px;
         top: 30px;
         right: 300px;
-        background-image: url("../../../assets/img/team/note.png");
+        background-image: url("../img/team/note.png");
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 1;
@@ -2745,7 +2745,7 @@ body {
         max-height: 160px;
         left: -110px;
         top: 220px;
-        background-image: url("../../../assets/img/team/sphere.png");
+        background-image: url("../img/team/sphere.png");
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 1;
@@ -2769,7 +2769,7 @@ body {
         animation-fill-mode: both;
         animation-name: torusAnimation;
         animation-iteration-count: infinite;
-        background-image: url("../../../assets/img/team/torus.png");
+        background-image: url("../img/team/torus.png");
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 1; }
@@ -2818,7 +2818,7 @@ body {
         display: block;
         width: 35px;
         height: 35px;
-        background: url("../../../assets/img/contact-us-arrow.svg") no-repeat center center;
+        background: url("../img/contact-us-arrow.svg") no-repeat center center;
         background-size: contain;
         position: absolute;
         right: -10px;
@@ -2847,7 +2847,7 @@ body {
       vertical-align: middle;
       width: 19px;
       height: 19px;
-      background-image: url("../../../assets/img/NP.png"); }
+      background-image: url("../img/NP.png"); }
     .team .footer .link span {
       font-family: "Archivo", sans-serif;
       font-size: 12px;

@@ -191,6 +191,7 @@ for (let i = 0; i < slides.length; i++) {
 }
 
 let slideOffsets = [];
+
 for (let i = 0; i < scenes.length; i++) {
     scenes[i].removePin(true);
     scenes[i].setPin(slides[i]);
@@ -269,10 +270,6 @@ if (!demo.error) {
 } else {
     console.error(demo.error);
 }
-
-
-
-
 
 let demoSec = new CountUp('counter', 100);
 if (!demoSec.error) {
