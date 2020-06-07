@@ -78,6 +78,7 @@
                     transition: all 0.3s linear;
                     color: #ffffff;
                 }
+
                 &::before {
                     opacity: 1;
                     background-color: $red;
@@ -85,7 +86,6 @@
 
                 }
             }
-
 
 
             &.swiper-button-disabled {
@@ -315,7 +315,6 @@
                     }
                 }
 
-
             }
 
             &:hover {
@@ -324,13 +323,13 @@
                     width: 100%;
 
                 }
+
                 span {
                     &::after {
                         right: -50px;
                         transform: rotate(46deg);
                     }
                 }
-
             }
         }
 
@@ -423,7 +422,7 @@
 @media screen and (max-width: 1280px) {
 
     .team {
-        >.container {
+        > .container {
             padding-left: 50px;
             padding-right: 50px;
         }
@@ -435,12 +434,13 @@
 
     .team {
 
-        >.container {
+        > .container {
             padding-top: 12vh;
         }
 
         .content__wrapper {
             height: 300px;
+
             .img__wrapper {
                 .note {
                     top: -81px;
@@ -470,10 +470,12 @@
                 .note {
                     right: 117px;
                 }
+
                 .torus {
                     top: 445px;
                 }
             }
+
             .img__wrapper-hidden {
                 .note {
                     max-width: 175px;
@@ -487,10 +489,12 @@
                     animation-name: teamNoteMobile;
                     animation-iteration-count: infinite;
                 }
+
                 .sphere {
                     max-width: 135px;
                     max-height: 135px;
                 }
+
                 .torus {
                     max-width: 160px;
                     max-height: 160px;
@@ -514,7 +518,7 @@
 @media screen and (min-height: 810px) {
 
     .team {
-        >.container {
+        > .container {
             padding-top: 20vh;
         }
     }
@@ -524,7 +528,7 @@
 @media screen and (max-width: 640px) {
 
     .team {
-        >.container {
+        > .container {
             padding-left: 0;
             padding-right: 0;
         }
@@ -563,6 +567,7 @@
             }
 
         }
+
         .team-bottom {
             .contact-us__wrapper {
                 span {
@@ -595,12 +600,15 @@
         > .container {
             padding-top: 16vh;
         }
+
         .title_wrapper {
             margin-bottom: 30px;
+
             .team__title {
                 font-size: 26px;
             }
         }
+
         .content__wrapper {
             .img__wrapper {
                 .note {
@@ -608,16 +616,19 @@
                     right: 0;
                     max-width: 150px;
                 }
+
                 .sphere {
                     left: 21px;
                     max-width: 125px;
                 }
+
                 .torus {
                     top: 310px;
                     right: 15px;
                     max-width: 160px;
                 }
             }
+
             .img__wrapper-hidden {
                 .note {
                     max-width: 175px;
@@ -625,10 +636,12 @@
                     right: 95px;
                     top: 0;
                 }
+
                 .sphere {
                     max-width: 135px;
                     max-height: 135px;
                 }
+
                 .torus {
                     max-width: 160px;
                     max-height: 160px;
@@ -643,11 +656,13 @@
                 }
             }
         }
+
         .team-bottom {
             .contact-us__wrapper {
                 span {
                     font-size: 22px;
                     font-weight: 700;
+
                     &::after {
                         width: 24px;
                         height: 24px;
@@ -655,23 +670,22 @@
                 }
             }
         }
-
-
     }
 }
 
-@media screen and (max-width: 420px) and (max-height: 670px ){
+@media screen and (max-width: 420px) and (max-height: 670px) {
     .team {
         .content__wrapper {
             .img__wrapper {
                 .sphere {
                     top: 230px;
                 }
+
                 .torus {
                     top: 260px;
                 }
-
             }
+
             .img__wrapper-hidden {
                 .note {
                     max-width: 175px;
@@ -679,16 +693,19 @@
                     right: 95px;
                     top: 0;
                 }
+
                 .sphere {
                     max-width: 135px;
                     max-height: 135px;
                 }
+
                 .torus {
                     max-width: 160px;
                     max-height: 160px;
                     top: 242px;
                     right: 112px;
                 }
+
                 &.active {
                     .note {
                         transition: all 0.3s linear;
@@ -701,6 +718,7 @@
                         animation-name: sphereAnimationMobile;
                         animation-duration: 5s;
                     }
+
                     .torus {
                         transition: all 0.3s linear;
                         animation-name: torusAnimationMobile;
@@ -710,12 +728,15 @@
             }
 
         }
+
         .team-bottom {
             .contact-us__wrapper {
                 max-height: 120px;
+
                 span {
                     font-size: 22px;
                     font-weight: 700;
+
                     &::after {
                         width: 24px;
                         height: 24px;
@@ -730,7 +751,6 @@
             }
         }
 
-
     }
 }
 
@@ -738,6 +758,7 @@
     .team {
         .title_wrapper {
             margin-bottom: 20px;
+
             .team__title {
                 font-size: 24px;
             }
@@ -749,11 +770,13 @@
                 .sphere {
                     top: 185px;
                 }
+
                 .torus {
                     top: 210px;
                     right: 0;
                 }
             }
+
             .img__wrapper-hidden {
                 .note {
                     max-width: 175px;
@@ -762,17 +785,19 @@
                     top: 0;
                     animation-name: teamNoteMobile;
                 }
+
                 .sphere {
                     max-width: 135px;
                     max-height: 135px;
                     animation-name: sphereAnimationMobile;
                 }
+
                 .torus {
                     max-width: 160px;
                     max-height: 160px;
                     top: 212px;
                     right: 112px;
-                    animation-name:  torusAnimationMobileSmall;
+                    animation-name: torusAnimationMobileSmall;
                 }
             }
         }
@@ -780,9 +805,11 @@
         .team-bottom {
             .contact-us__wrapper {
                 max-height: 120px;
+
                 span {
                     font-size: 22px;
                     font-weight: 700;
+
                     &::after {
                         width: 24px;
                         height: 24px;
@@ -795,9 +822,11 @@
             .container {
                 padding: 0 20px;
             }
+
             .text {
                 font-size: 12px;
             }
+
             .link {
                 span {
                     font-size: 10px;
@@ -809,10 +838,11 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 400px) and (max-height: 600px)  {
+@media screen and (min-width: 320px) and (max-width: 400px) and (max-height: 600px) {
     .team {
         .title_wrapper {
             margin-bottom: 10px;
+
             .team__title {
                 font-size: 24px;
             }
@@ -821,6 +851,7 @@
 
         .content__wrapper {
             max-height: 36vh;
+
             .img__wrapper-hidden {
                 .note {
                     max-width: 175px;
@@ -829,17 +860,19 @@
                     top: 0;
                     animation-name: teamNoteMobile;
                 }
+
                 .sphere {
                     max-width: 115px;
                     max-height: 115px;
                     animation-name: sphereAnimationMobile;
                 }
+
                 .torus {
                     max-width: 140px;
                     max-height: 140px;
                     top: 212px;
                     right: 112px;
-                    animation-name:  torusAnimationMobileSmall;
+                    animation-name: torusAnimationMobileSmall;
                 }
             }
         }
@@ -847,9 +880,11 @@
         .team-bottom {
             .contact-us__wrapper {
                 max-height: 120px;
+
                 span {
                     font-size: 22px;
                     font-weight: 700;
+
                     &::after {
                         width: 24px;
                         height: 24px;
@@ -862,16 +897,17 @@
             .container {
                 padding: 0 20px;
             }
+
             .text {
                 font-size: 12px;
             }
+
             .link {
                 span {
                     font-size: 10px;
                 }
             }
         }
-
 
     }
 }
