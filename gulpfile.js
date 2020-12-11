@@ -21,7 +21,7 @@ const browsersync = require("browser-sync").create();
 
 
 /* Paths */
-var path = {
+let path = {
     build: {
         html: "dist/",
         js: "dist/assets/js/",
@@ -41,7 +41,7 @@ var path = {
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
     },
     clean: "./dist"
-}
+};
 
 
 
